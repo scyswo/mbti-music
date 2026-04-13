@@ -1,0 +1,195 @@
+/* ==== 全站主題：白色 × 寶寶藍 × 粉色 ==== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f6ff 0%, #fce4f0 50%, #e8f4ff 100%);
+  color: #2d3748;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-top {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+/* 卡片 */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow:
+    0 4px 24px rgba(180, 200, 255, 0.25),
+    0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
+}
+
+/* 主按鈕 */
+.btn {
+  background: linear-gradient(120deg, #ff9ec4, #7ec8e3);
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  margin-top: 16px;
+  transition: opacity 0.2s, transform 0.1s;
+  box-shadow: 0 4px 16px rgba(126, 200, 227, 0.35);
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* 透明按鈕 */
+.btn-ghost {
+  background: transparent;
+  border: 1.5px solid rgba(126, 200, 227, 0.5);
+  padding: 11px 20px;
+  border-radius: 999px;
+  color: #5a8fa8;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-ghost:hover {
+  background: rgba(126, 200, 227, 0.1);
+  border-color: #7ec8e3;
+}
+
+/* 輸入框 */
+input, select {
+  width: 100%;
+  padding: 13px 16px;
+  margin-top: 8px;
+  border-radius: 14px;
+  border: 1.5px solid rgba(126, 200, 227, 0.4);
+  background: rgba(255,255,255,0.9);
+  color: #2d3748;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input::placeholder {
+  color: #a0b4c0;
+}
+
+input:focus {
+  border-color: #7ec8e3;
+  box-shadow: 0 0 0 3px rgba(126, 200, 227, 0.15);
+}
+
+label {
+  font-size: 13px;
+  color: #7a9ab0;
+  font-weight: 600;
+  margin-top: 16px;
+  display: block;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.7;
+}
+
+/* 漸層文字 */
+.gradient-text {
+  background: linear-gradient(120deg, #ff9ec4, #7ec8e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 標籤 pill */
+.tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(126, 200, 227, 0.15);
+  color: #5a8fa8;
+  border: 1px solid rgba(126, 200, 227, 0.3);
+  margin: 3px;
+}
+
+.tag-pink {
+  background: rgba(255, 158, 196, 0.15);
+  color: #c06080;
+  border-color: rgba(255, 158, 196, 0.3);
+}
+
+/* 進度條 */
+.progress-wrap {
+  height: 7px;
+  background: rgba(126, 200, 227, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff9ec4, #7ec8e3);
+  transition: width 0.4s ease;
+}
+
+/* 分隔線 */
+.divider {
+  height: 1px;
+  background: rgba(126, 200, 227, 0.2);
+  margin: 20px 0;
+}
