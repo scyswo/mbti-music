@@ -117,7 +117,7 @@ const QUESTIONS = [
 function Quiz() {
   const [current, setCurrent] = useState(0);
   const [selectedHistory, setSelectedHistory] = useState([]); // 每題選的選項
-  const [totalScores, setTotalScores] = useState({ E:0, I:0, S:0, N:0, T:0, F:0, J:0, P:0 });
+  //const [totalScores, setTotalScores] = useState({ E:0, I:0, S:0, N:0, T:0, F:0, J:0, P:0 });
   const navigate = useNavigate();
 
   const question = QUESTIONS[current];
