@@ -139,7 +139,6 @@ function Quiz() {
     });
 
     setSelectedHistory(newHistory);
-    setTotalScores(newScores);
 
     // 自動跳下一題
     setTimeout(() => {

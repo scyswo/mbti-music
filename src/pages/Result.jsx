@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import html2canvas from 'html2canvas';
 import { orchestrator } from '../agents/orchestrator';
 
 // ── 16 種 MBTI 聽歌人格描述 ──────────────────────────────────
@@ -76,6 +77,9 @@ function Result() {
   const [message, setMessage]   = useState('');
   const [weights, setWeights]   = useState([]);
   const [loading, setLoading]   = useState(true);
+  const [shareId, setShareId]   = useState(null);
+  const [copyMsg, setCopyMsg]   = useState('');
+  const shareCardRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -88,10 +92,39 @@ function Result() {
       setMbti(result.mbtiType);
       setMessage(result.message);
       setSongs(result.songs);
+      setShareId(result.shareId ?? null);
       localStorage.setItem('mbtiResult', result.mbtiType);
       setLoading(false);
     });
   }, []);
+
+  const handleDownloadJpg = async () => {
+    if (!shareCardRef.current) return;
+    try {
+      const canvas = await html2canvas(shareCardRef.current, {
+        backgroundColor: '#f8f4f0',
+        scale: 2,
+        useCORS: true,
+        logging: false,
+      });
+      const link = document.createElement('a');
+      link.download = `mbti-music-${mbti || 'result'}.jpg`;
+      link.href = canvas.toDataURL('image/jpeg', 0.92);
+      link.click();
+    } catch (e) {
+      alert('截圖失敗，請嘗試長按畫面儲存圖片');
+    }
+  };
+
+  const handleCopyLink = () => {
+    const url = shareId
+      ? `${window.location.origin}/share/${shareId}`
+      : `${window.location.origin}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setCopyMsg('連結已複製！');
+      setTimeout(() => setCopyMsg(''), 2500);
+    });
+  };
 
   if (loading) {
     return (
@@ -268,6 +301,67 @@ function Result() {
         )}
       </div>
 
+      {/* 分享卡片（用於截圖，視覺上隱藏在頁面外，截圖時捕捉） */}
+      <div
+        ref={shareCardRef}
+        style={{
+          position: 'fixed',
+          left: '-9999px',
+          top: 0,
+          width: '360px',
+          padding: '32px 24px',
+          background: 'linear-gradient(145deg, #fff8f5 0%, #f0f8ff 100%)',
+          fontFamily: 'sans-serif',
+        }}
+      >
+        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+          <div style={{ fontSize: '13px', color: '#a0b4c0', fontWeight: '600', marginBottom: '6px' }}>
+            {nickname} 的音樂人格
+          </div>
+          <div style={{
+            fontSize: '52px', fontWeight: '900', lineHeight: 1,
+            background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+          }}>
+            {mbti}
+          </div>
+        </div>
+
+        <div style={{
+          background: '#fff',
+          borderRadius: '16px',
+          padding: '18px 20px',
+          boxShadow: '0 2px 16px rgba(126,200,227,0.12)',
+          marginBottom: '16px',
+        }}>
+          <div style={{ fontSize: '16px', fontWeight: '800', marginBottom: '8px',
+            background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+          }}>
+            {personality.name}
+          </div>
+          <p style={{ fontSize: '13px', lineHeight: '1.7', color: '#4a5568', margin: 0 }}>
+            {personality.desc}
+          </p>
+        </div>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '16px' }}>
+          {preference.genres.map((g, i) => (
+            <span key={i} style={{
+              fontSize: '11px', padding: '4px 10px', borderRadius: '999px',
+              background: i % 2 === 0
+                ? 'rgba(126,200,227,0.15)' : 'rgba(255,158,196,0.15)',
+              color: i % 2 === 0 ? '#7ec8e3' : '#ff9ec4',
+              fontWeight: '600',
+            }}>{g}</span>
+          ))}
+        </div>
+
+        <div style={{ textAlign: 'center', fontSize: '11px', color: '#b0c4d0' }}>
+          mbti-music.vercel.app
+        </div>
+      </div>
+
       {/* 按鈕 */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '8px' }}>
         <button className="btn" onClick={() => {
@@ -278,13 +372,11 @@ function Result() {
         }}>
           🔁 重新測驗
         </button>
-        <button className="btn-ghost" onClick={() => {
-          navigator.clipboard.writeText(
-            `我的 MBTI 音樂人格是 ${mbti}！${personality.name} 🎵`
-          );
-          alert('已複製結果！快分享給朋友吧 🎉');
-        }}>
-          📤 分享結果
+        <button className="btn-ghost" onClick={handleDownloadJpg}>
+          📸 截圖下載 JPG
+        </button>
+        <button className="btn-ghost" onClick={handleCopyLink}>
+          {copyMsg || (shareId ? '🔗 複製分享連結' : '📋 複製結果文字')}
         </button>
       </div>
 

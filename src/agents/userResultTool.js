@@ -18,12 +18,14 @@ export async function userResultTool({ nickname, answers, mbtiResult }) {
           answers: answers,
           mbti_result: mbtiResult,
         },
-      ]);
+      ])
+      .select();
 
     if (error) throw error;
 
-    console.log('[Agent] Tool 5 完成：用戶資料已儲存');
-    return { success: true, data };
+    const shareId = data?.[0]?.id ?? null;
+    console.log('[Agent] Tool 5 完成：用戶資料已儲存，shareId:', shareId);
+    return { success: true, data, shareId };
 
   } catch (err) {
     console.error('[Agent] Tool 5 錯誤：', err);

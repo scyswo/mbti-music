@@ -46,6 +46,7 @@ export async function orchestrator(answers, nickname) {
     personality,
     message,
     songs,
+    shareId: saveResult.shareId ?? null,
   };
 
   console.log('[Orchestrator] 所有 Agent 執行完畢');
