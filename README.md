@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 🎧 MBTI Music Recommendation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A personality-based music recommendation system built with a **Multi-Agent (Orchestrator + Tools)** architecture.
 
-## Available Scripts
+**Live Demo:** [mbti-music-1.vercel.app](https://mbti-music-1.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users complete a 10-question personality test, and the system runs multiple specialized agents in parallel to generate a personalized MBTI profile, preference analysis, and curated Spotify song recommendations — all stored persistently in a cloud database.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 System Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+User Input (10Q)
+      ↓
+  Orchestrator
+      ├── mbtiTool          → Multi-dimension score → MBTI type
+      ├── personalityTool   → Description mapping
+      ├── messageTool       → Dynamic recommendation message
+      ├── musicTool         → Supabase query + fallback engine
+      └── userResultTool    → Persist result to DB, return share ID
+      ↓
+  Result Page
+      ├── Preference analysis (weighted bar chart)
+      ├── Spotify Embed playback
+      ├── Screenshot export (html2canvas → JPG)
+      └── Shareable link (/share/:id via Supabase row ID)
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Layer | Technology |
+|---|---|
+| Frontend | React 19, React Router v7 |
+| Database | Supabase (PostgreSQL) |
+| Music API | Spotify Embed API |
+| Deployment | Vercel (CI/CD via GitHub) |
+| Screenshot | html2canvas |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **10-question personality test** with multi-dimension MBTI scoring (E/I, S/N, T/F, J/P)
+- **MBTI-based recommendation engine** with compatibility-ranked fallback logic
+- **Real-time Spotify playback** via embedded player
+- **Preference analysis** with weighted dimension chart
+- **Persistent user data storage** in Supabase
+- **Screenshot export** — generates a shareable card as JPG
+- **Shareable result link** — unique URL per result via Supabase row ID
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧩 Challenges & Solutions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Problem:** Supabase array column type mismatch with `.contains()`  
+**Solution:** Added client-side filtering + local `songs.json` as fallback
 
-## Learn More
+**Problem:** MBTI always returning `ESTJ` regardless of answers  
+**Solution:** `mbtiTool` was reading `answers.EI` (string format) while Quiz stored `answers.E / answers.I` (numeric format) — fixed to use numeric comparison directly
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Problem:** Fallback logic recommending ISTJ songs to ESFJ users  
+**Solution:** Replaced random fallback with compatibility-ranked selection (counts matching MBTI letters)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Problem:** Spotify iframes blocked by html2canvas (cross-origin)  
+**Solution:** Screenshot target is a hidden card with song titles/artists in pure text — no iframes
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Project Structure
 
-### Analyzing the Bundle Size
+```
+src/
+├── agents/
+│   ├── orchestrator.js      # Main controller
+│   ├── mbtiTool.js          # MBTI calculation
+│   ├── personalityTool.js   # Description mapping
+│   ├── messageTool.js       # Dynamic message
+│   ├── musicTool.js         # Song recommendation engine
+│   └── userResultTool.js    # DB storage + share ID
+├── pages/
+│   ├── Home.jsx
+│   ├── Quiz.jsx
+│   ├── Result.jsx           # Screenshot + share link
+│   └── Share.jsx            # Public result view via ID
+└── lib/
+    └── supabase.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 💡 What I Learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Multi-Agent system design** — Orchestrator pattern for coordinating parallel async tools
+- **Full-stack integration** — React frontend + Supabase PostgreSQL + Spotify API
+- **Debugging production issues** — score format mismatch, fallback edge cases, iframe cross-origin constraints
+- **Shareable content architecture** — persisting results with unique IDs for social sharing
