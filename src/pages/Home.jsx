@@ -23,7 +23,7 @@ function Home() {
           <div style={{ fontSize: '52px', marginBottom: '12px' }}>🎧</div>
           <h1>MBTI 音樂人格測驗</h1>
           <p style={{ marginTop: '10px' }}>
-            12 道題目，找出你專屬的聽歌人格<br />
+            10 道題目，找出你專屬的聽歌人格<br />
             並為你推薦最適合的 3 首歌曲
           </p>
         </div>
@@ -45,7 +45,7 @@ function Home() {
         </button>
 
         <p style={{ textAlign: 'center', marginTop: '16px', fontSize: '13px' }}>
-          測驗約需 2 分鐘 ✦ 共 12 題
+          測驗約需 2 分鐘 ✦ 共 10 題
         </p>
 
       </div>
