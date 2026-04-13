@@ -357,6 +357,39 @@ function Result() {
           ))}
         </div>
 
+        {/* 推薦歌曲 */}
+        {songs.length > 0 && (
+          <div style={{
+            background: '#fff',
+            borderRadius: '16px',
+            padding: '16px 20px',
+            boxShadow: '0 2px 16px rgba(126,200,227,0.12)',
+            marginBottom: '16px',
+          }}>
+            <div style={{ fontSize: '11px', color: '#a0b4c0', fontWeight: '700', letterSpacing: '1px', marginBottom: '12px' }}>
+              🎵 為你精選的歌曲
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {songs.map((song, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{
+                    width: '24px', height: '24px', borderRadius: '50%', flexShrink: 0,
+                    background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: '11px', fontWeight: '800', color: '#fff',
+                  }}>
+                    {i + 1}
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '13px', fontWeight: '700', color: '#2d3748' }}>{song.title}</div>
+                    <div style={{ fontSize: '11px', color: '#a0b4c0', marginTop: '1px' }}>{song.artist}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div style={{ textAlign: 'center', fontSize: '11px', color: '#b0c4d0' }}>
           mbti-music.vercel.app
         </div>
