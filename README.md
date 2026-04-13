@@ -4,7 +4,7 @@
 
 **Live Demo:** [mbti-music-1.vercel.app](https://mbti-music-1.vercel.app)
 
-**word**[完整詳細介紹](https://drive.google.com/file/d/14DzfiZHM8SuIMVIpkHs1o6PVflTFlgoY/view?usp=drive_link)
+**word:**[完整詳細介紹](https://drive.google.com/file/d/14DzfiZHM8SuIMVIpkHs1o6PVflTFlgoY/view?usp=drive_link)
 
 ---
 
