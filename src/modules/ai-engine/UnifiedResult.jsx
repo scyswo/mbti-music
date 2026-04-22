@@ -7,7 +7,7 @@ import SpotifyIframe from '../../components/common/SpotifyIframe';
 import ProgressBar from '../../components/common/ProgressBar';
 import {
   PREFERENCE_MAP, LANG_LABEL, STYLE_CONFIG, DIM_CONFIG,
-  getDynamicInsight, buildProfileSummary, buildWhyConnection, buildSongReason, buildDimTitle,
+  getDynamicInsight, buildProfileSummary, buildWhyConnection, buildDimTitle,
 } from '../../helpers/quizConfig';
 import { ALL_STYLES } from '../../helpers/musicMath';
 
@@ -263,7 +263,6 @@ export default function V2Result() {
               const title   = song.name  || song.track_name  || '未知歌曲';
               const artist  = song.artist || song.artist_name || '未知歌手';
               const langTag = song.lang ? (LANG_LABEL[song.lang] || song.lang) : null;
-              const reason  = buildSongReason(song, avg);
               return (
                 <motion.div key={i}
                   initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -289,12 +288,6 @@ export default function V2Result() {
                       color: '#7ec8e3', fontWeight: '700',
                     }}>#{i + 1}</span>
                   </div>
-                  <p style={{
-                    fontSize: '12px', color: '#8a9ab0', lineHeight: '1.6', fontStyle: 'italic',
-                    marginBottom: '8px', borderLeft: '2px solid rgba(126,200,227,0.35)', paddingLeft: '8px',
-                  }}>
-                    💬 {reason}
-                  </p>
                   <SpotifyIframe trackId={trackId} title={title} />
                 </motion.div>
               );
@@ -306,7 +299,7 @@ export default function V2Result() {
       {/* 隱藏分享截圖卡片 */}
       <div ref={shareCardRef} style={{
         position: 'fixed', left: '-9999px', top: 0, width: '360px', padding: '32px 24px',
-        background: 'linear-gradient(145deg, #fff8f5 0%, #f0f8ff 100%)', fontFamily: 'sans-serif',
+        background: 'linear-gradient(135deg, #f0f6ff 0%, #fce4f0 50%, #e8f4ff 100%)', fontFamily: 'sans-serif',
       }}>
         <div style={{ textAlign: 'center', marginBottom: '8px' }}>
           <div style={{ fontSize: '12px', color: '#a0b4c0', fontWeight: '600' }}>{profileSummary}</div>
@@ -314,16 +307,12 @@ export default function V2Result() {
         <div style={{ textAlign: 'center', marginBottom: '20px' }}>
           <div style={{ fontSize: '13px', color: '#a0b4c0', fontWeight: '600', marginBottom: '6px' }}>{nickname} 的音樂人格</div>
           <div style={{
-            fontSize: '52px', fontWeight: '900', lineHeight: 1,
-            background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
-            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+            fontSize: '52px', fontWeight: '900', lineHeight: 1, color: '#2d3748',
           }}>{mbti}</div>
         </div>
         <div style={{ background: '#fff', borderRadius: '16px', padding: '18px 20px', boxShadow: '0 2px 16px rgba(126,200,227,0.12)', marginBottom: '16px' }}>
           <div style={{
-            fontSize: '16px', fontWeight: '800', marginBottom: '8px',
-            background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
-            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+            fontSize: '16px', fontWeight: '800', marginBottom: '8px', color: '#2d3748',
           }}>{analysis.musicPersona}</div>
           <p style={{ fontSize: '13px', lineHeight: '1.7', color: '#4a5568', margin: 0 }}>{analysis.summary}</p>
         </div>

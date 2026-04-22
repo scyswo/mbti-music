@@ -75,11 +75,19 @@ export function buildProfileSummary(avg) {
 
 // ⚠️ 用戶自定義區：建立數據與 MBTI 性格的關聯解釋
 export function buildWhyConnection(mbti, avg) {
-  const top2 = DIM_CONFIG.map(d => ({
-    name:    (avg[d.key] || 0) >= 0.50 ? `高${d.label}(${d.highLabel})` : `低${d.label}(${d.lowLabel})`,
-    extreme: Math.abs((avg[d.key] || 0.5) - 0.5),
-  })).sort((a, b) => b.extreme - a.extreme).slice(0, 2);
-  return `因為你的${top2[0].name} + ${top2[1].name}，代表你在音樂中追求特定的情感共鳴，這與 ${mbti} 的核心特質非常契合。`;
+  const top2 = DIM_CONFIG.map(d => {
+    const isHigh = (avg[d.key] || 0) >= 0.50;
+    return {
+      icon:    isHigh ? d.highIcon : d.lowIcon,
+      label:   isHigh ? d.highLabel : d.lowLabel,
+      extreme: Math.abs((avg[d.key] || 0.5) - 0.5),
+    };
+  }).sort((a, b) => b.extreme - a.extreme).slice(0, 2);
+
+  const pref = PREFERENCE_MAP[mbti];
+  const likeHint = pref ? `${mbti} 本來就偏愛${pref.likes}` : `這是 ${mbti} 的典型音樂傾向`;
+
+  return `你最突出的兩個特質是「${top2[0].icon} ${top2[0].label}」和「${top2[1].icon} ${top2[1].label}」，${likeHint}，兩者一拍即合。`;
 }
 
 // ⚠️ 用戶自定義區：標註該歌曲與用戶特徵的重疊點
