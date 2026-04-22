@@ -237,15 +237,6 @@ export default function V2Result() {
         {/* 音樂人格五維度 暫時隱藏 */}
       </motion.div>
 
-      {/* MBTI 理由鏈 */}
-      <motion.div {...su(0.46)} className="card">
-        <div style={{ fontSize: '15px', color: '#1a202c', fontWeight: '800', marginBottom: '12px' }}>
-          🔗 為什麼你像 {mbti}？
-        </div>
-        <p style={{ fontSize: '14px', lineHeight: '1.85', color: '#4a5568' }}>
-          👉 {whyConnection}
-        </p>
-      </motion.div>
 
       {/* ③ 推薦歌曲 */}
       <motion.div {...su(0.54)} className="card">

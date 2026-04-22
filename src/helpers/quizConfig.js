@@ -28,7 +28,7 @@ export const PREFERENCE_MAP = {
   ESFP: { likes: '讓你忍不住跳舞的快樂音樂', dislikes: '太安靜或讓氣氛變悶的歌', time: '任何時候都能聽！', genres: ['Pop', 'Dance', 'K-Pop', 'EDM'] },
 };
 
-export const LANG_LABEL = { zh: '🇹🇼 TW 中文', ko: '🇰🇷 KR 韓文', en: '🇺🇸 US 英文' };
+export const LANG_LABEL = { zh: '中文', ko: '韓文', en: 'EN' };
 
 export const DIM_CONFIG = [
   { key: 'valence',      label: '內在心情色', highIcon: '☀️', lowIcon: '🌙', highLabel: '快樂',     lowLabel: '憂鬱'      },

@@ -43,9 +43,9 @@ export function clearQuizCache() {
 
 // ─── Exponential Backoff Retry + Key Rotation ─────────────
 // quota 耗盡 → 切換 key（不消耗重試次數）
-// 429 頻率限制 → 15s → 30s → 60s
+// 429 頻率限制 → 15s → 30s
 // 503 忙碌    → 2s  → 4s  → 8s
-async function withRetry(fn, maxRetries = 3) {
+async function withRetry(fn, maxRetries = 2) {
   const exhaustedKeys = new Set();
   let attempt = 0;
 
