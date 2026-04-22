@@ -15,7 +15,6 @@ let keyIndex = 0;
 function getClient() {
   const key = API_KEYS[keyIndex];
   if (!key) throw new Error('找不到任何 REACT_APP_GEMINI_API_KEY，請檢查 .env');
-  console.log(`[Gemini] 使用 Key ${keyIndex + 1}/${API_KEYS.length} (${key.slice(0, 8)}...)`);
   return new GoogleGenerativeAI(key);
 }
 
@@ -64,7 +63,6 @@ async function withRetry(fn, maxRetries = 2) {
         const next = API_KEYS.findIndex((_, i) => !exhaustedKeys.has(i));
         if (next === -1) throw new Error('所有 API Key 每日配額已耗盡，請明天再試或新增 Key');
         keyIndex = next;
-        console.warn(`[Gemini] 配額耗盡，切換至 Key ${keyIndex + 1}/${API_KEYS.length}`);
         continue; // 不遞增 attempt
       }
 
@@ -74,7 +72,6 @@ async function withRetry(fn, maxRetries = 2) {
 
       attempt++;
       const waitMs = (2 ** (attempt - 1)) * 15000 + Math.random() * 1000;
-      console.warn(`[Gemini] 429 — 第 ${attempt} 次重試，等待 ${(waitMs / 1000).toFixed(1)}s...`);
       await new Promise(r => setTimeout(r, waitMs));
     }
   }
@@ -144,7 +141,7 @@ const QUIZ_PROMPT = `你是一個音樂人格測驗出題專家。請生成 10 �
 export async function generateQuizQuestions({ fresh = false } = {}) {
   if (!fresh) {
     const cached = getCachedQuestions();
-    if (cached) { console.log('[Gemini] 使用快取題目（30 分鐘內有效）'); return cached; }
+    if (cached) return cached;
   }
 
   const model = getClient().getGenerativeModel({ model: 'gemini-2.5-flash' });

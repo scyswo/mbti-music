@@ -13,7 +13,6 @@ export async function loadQuizQuestions(n = 10) {
     const questions = await generateQuizQuestions({ fresh: true });
     return { questions: questions.slice(0, n), isAiGenerated: true };
   } catch (err) {
-    console.warn('[quizOrchestrator] AI 生成失敗，切換至本地題庫:', err?.message);
     const questions = await loadStaticQuestions(n);
     return { questions, isAiGenerated: false };
   }
