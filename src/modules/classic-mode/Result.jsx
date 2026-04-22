@@ -1,26 +1,26 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
-import { orchestrator } from '../agents/orchestrator';
+import { orchestrator } from '../../agents/orchestrator';
 
 // ── 16 種 MBTI 聽歌人格描述 ──────────────────────────────────
 const PERSONALITY_MAP = {
-  INTJ: { name: '孤獨的旋律建築師',    desc: '你用理性解構每一首歌，從編曲到歌詞都有你自己的評分標準。你不追流行，只追那些真正打動你內心深處的作品。' },
-  INTP: { name: '音符邏輯探索者',      desc: '你喜歡挖掘冷門神曲，享受發現別人還沒聽過的寶藏。對你來說，聽音樂是一場永無止境的知識探索之旅。' },
-  ENTJ: { name: '強勢的聽覺掌控者',   desc: '你的歌單像是一份精心規劃的策略清單。你喜歡有力量感的音樂，需要它在你征服每一天時為你提供燃料。' },
-  ENTP: { name: '反叛的聲音獵人',     desc: '你永遠在挑戰主流，喜歡那些有點奇怪、有點挑釁的音樂。你的歌單讓別人摸不透，但你就是愛這種感覺。' },
-  INFJ: { name: '靈魂共鳴的追尋者',   desc: '你把每首歌當成一面鏡子，尋找那些能說出你說不出口的感受的旋律。音樂對你來說是靈魂的語言，不只是娛樂。' },
-  INFP: { name: '迷霧中的旋律漫遊者', desc: '你是個用音樂做夢的人。一首歌能讓你在腦海裡展開整部電影，你永遠在尋找那首能讓你淚崩的完美歌曲。' },
-  ENFJ: { name: '溫暖的音樂傳遞者',   desc: '你聽音樂是為了分享。你總是第一個說「你一定要聽這首！」的人，因為你相信對的音樂能改變一個人的一天。' },
-  ENFP: { name: '跳躍感性的音浪衝浪者', desc: '你的心情決定你的歌單，而你的心情每小時都在變。你活在音樂的當下，每首歌都是一次全新的冒險。' },
-  ISTJ: { name: '穩定忠實的老派聆聽者', desc: '你有固定的歌單，某些歌你已經聽了幾百遍還不夠。對你來說，熟悉的旋律就是最好的陪伴，可靠又安心。' },
-  ISFJ: { name: '懷舊溫柔的記憶守護者', desc: '每首歌背後都有一段你珍藏的回憶。你喜歡能讓心情平靜下來的溫柔旋律，像一杯熱茶陪你度過每個普通的夜晚。' },
-  ESTJ: { name: '效率至上的節奏執行者', desc: '你用音樂提升效率。工作時、運動時、通勤時，你都有對應的歌單。你不浪費時間猶豫，直接播最有效果的那首。' },
-  ESFJ: { name: '人氣榜單的快樂跟隨者', desc: '你喜歡那些讓大家都能一起唱的歌。流行榜上的金曲是你的最愛，因為音樂就是要一起分享才有意義！' },
-  ISTP: { name: '冷靜酷感的獨立聽眾', desc: '你不需要別人推薦，自己挖歌比任何算法都準。你偏好有質感、不做作的音樂，酷感是你選歌的唯一標準。' },
-  ISFP: { name: '細膩敏感的美感體驗者', desc: '你用全身感受音樂。一首歌的聲音質地、人聲的顆粒感，都能讓你沉浸其中。你聽的不只是音樂，是一種藝術體驗。' },
-  ESTP: { name: '當下燃燒的能量爆發者', desc: '你需要讓你動起來的音樂！節奏強、Bass 重、讓你忍不住點頭的那種。你聽音樂就是要感受當下最大的刺激。' },
-  ESFP: { name: '派對靈魂的快樂製造機', desc: '你走到哪裡音樂就跟到哪裡。你是那個會突然在客廳開始跳舞的人，因為對你來說，生活本身就是一場演唱會。' },
+  INTJ: { name: '孤獨的旋律建築師',    desc: '你對音樂其實很挑剔，比起盲目跟風，更喜歡拆解編曲裡的細節。那些能撞擊靈魂的旋律，對你來說才算真正的共鳴。' },
+  INTP: { name: '音符邏輯探索者',      desc: '你總在挖掘那些沒人聽過的冷門神曲，對你來說，在音符裡找到未知的寶藏，比聽什麼熱門榜單都有趣多了。' },
+  ENTJ: { name: '強勢的聽覺掌控者',   desc: '你的歌單就是你的戰鬥曲，你喜歡有力量的節奏，讓音樂在你征服生活中的每個挑戰時，提供最強大的底氣。' },
+  ENTP: { name: '反叛的聲音獵人',     desc: '你最愛那些古怪又挑釁的實驗性旋律。你的歌單沒人摸得透，而你最享受這種讓人意外的感覺。' },
+  INFJ: { name: '靈魂共鳴的追尋者',   desc: '你把每首歌都當成靈魂的鏡子，在旋律裡尋找那些你說不出口的情緒。對你來說，音樂是懂你的知己，不只是娛樂。' },
+  INFP: { name: '迷霧中的旋律漫遊者', desc: '你是個用音樂做夢的人，一首歌就能讓你在腦海裡演完一場電影。你一直在尋找那首能讓你徹底釋放情感的真命天曲。' },
+  ENFJ: { name: '溫暖的音樂傳遞者',   desc: '你聽歌是為了連結彼此，只要聽到好歌，你就迫不及待想分享。因為你相信一段對的旋律，真的能溫暖某個人的心。' },
+  ENFP: { name: '跳躍感性的音浪衝浪者', desc: '你的心情就是你的調音師，歌單隨時都在變。你享受每一首歌帶來的全新冒險，音樂對你來說就是活在當下的快樂。' },
+  ISTJ: { name: '穩定忠實的老派聆聽者', desc: '你很念舊，有些歌聽了幾百遍還是你的首選。比起追求新鮮感，這種熟悉的旋律帶給你的安心感，是誰也替代不了的。' },
+  ISFJ: { name: '懷舊溫柔的記憶守護者', desc: '每首歌都藏著你的一段回憶。你喜歡那種溫柔、安靜的旋律，像是在深夜裡陪著你的一杯熱茶，平靜且療癒。' },
+  ESTJ: { name: '效率至上的節奏執行者', desc: '你把音樂當成生活的助推器，不管是工作還是運動，你都有最精準的選擇。不浪費時間猶豫，直接點開最有感的那首。' },
+  ESFJ: { name: '人氣榜單的快樂跟隨者', desc: '你喜歡大家都能一起唱的流行金曲。對你來說，音樂的魅力就在於能讓每個人都參與其中，一起快樂才是最重要的。' },
+  ISTP: { name: '冷靜酷感的獨立聽眾', desc: '你不需要別人指手畫腳，自己挖到的歌才夠酷。你追求的是一種不做作的質感，只要節奏對了，其餘的都不重要。' },
+  ISFP: { name: '細膩敏感的美感體驗者', desc: '你用全身的感官在聽音樂，特別在意人聲的細膩與聲音的質地。對你來說，聽歌不只是聽，更像是在感受一場藝術。' },
+  ESTP: { name: '當下燃燒的能量爆發者', desc: '你需要那種能讓你燃起來的節奏！Bass 要重、重拍要準，聽音樂就是要追求那種全身細胞都被點燃的快感。' },
+  ESFP: { name: '派對靈魂的快樂製造機', desc: '生活就是你的演唱會，你走到哪裡音樂就響到哪裡。你喜歡那種能讓你隨時跳起舞來的旋律，快樂才是唯一的標準。' },
 };
 
 // ── 16 種 MBTI 偏好分析（喜歡 / 不偏好 / 時段 / 曲風）────────
@@ -102,7 +102,7 @@ function Result() {
     if (!shareCardRef.current) return;
     try {
       const canvas = await html2canvas(shareCardRef.current, {
-        backgroundColor: '#f8f4f0',
+        backgroundColor: '#ffd6e8',
         scale: 2,
         useCORS: true,
         logging: false,
@@ -309,89 +309,125 @@ function Result() {
           left: '-9999px',
           top: 0,
           width: '360px',
-          padding: '32px 24px',
-          background: 'linear-gradient(145deg, #fff8f5 0%, #f0f8ff 100%)',
-          fontFamily: 'sans-serif',
+          overflow: 'hidden',
+          padding: '36px 24px 32px',
+          background: 'linear-gradient(150deg, #ffd6e8 0%, #e8f4ff 55%, #f0eaff 100%)',
+          fontFamily: '"PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif',
         }}
       >
-        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-          <div style={{ fontSize: '13px', color: '#a0b4c0', fontWeight: '600', marginBottom: '6px' }}>
-            {nickname} 的音樂人格
-          </div>
-          <div style={{
-            fontSize: '52px', fontWeight: '900', lineHeight: 1,
-            background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
-            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-          }}>
-            {mbti}
-          </div>
-        </div>
+        {/* 背景光暈球 */}
+        <div style={{ position: 'absolute', top: '-60px', right: '-60px', width: '220px', height: '220px', borderRadius: '50%', background: 'rgba(255,158,196,0.45)', filter: 'blur(60px)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '60px', left: '-70px', width: '240px', height: '240px', borderRadius: '50%', background: 'rgba(126,200,227,0.35)', filter: 'blur(70px)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', top: '45%', right: '-40px', width: '160px', height: '160px', borderRadius: '50%', background: 'rgba(190,170,255,0.22)', filter: 'blur(45px)', pointerEvents: 'none' }} />
 
-        <div style={{
-          background: '#fff',
-          borderRadius: '16px',
-          padding: '18px 20px',
-          boxShadow: '0 2px 16px rgba(126,200,227,0.12)',
-          marginBottom: '16px',
-        }}>
-          <div style={{ fontSize: '16px', fontWeight: '800', marginBottom: '8px',
-            background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
-            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-          }}>
-            {personality.name}
-          </div>
-          <p style={{ fontSize: '13px', lineHeight: '1.7', color: '#4a5568', margin: 0 }}>
-            {personality.desc}
-          </p>
-        </div>
+        {/* 內容層 */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '16px' }}>
-          {preference.genres.map((g, i) => (
-            <span key={i} style={{
-              fontSize: '11px', padding: '4px 10px', borderRadius: '999px',
-              background: i % 2 === 0
-                ? 'rgba(126,200,227,0.15)' : 'rgba(255,158,196,0.15)',
-              color: i % 2 === 0 ? '#7ec8e3' : '#ff9ec4',
-              fontWeight: '600',
-            }}>{g}</span>
-          ))}
-        </div>
-
-        {/* 推薦歌曲 */}
-        {songs.length > 0 && (
-          <div style={{
-            background: '#fff',
-            borderRadius: '16px',
-            padding: '16px 20px',
-            boxShadow: '0 2px 16px rgba(126,200,227,0.12)',
-            marginBottom: '16px',
-          }}>
-            <div style={{ fontSize: '11px', color: '#a0b4c0', fontWeight: '700', letterSpacing: '1px', marginBottom: '12px' }}>
-              🎵 為你精選的歌曲
+          {/* 標頭 */}
+          <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+            <div style={{ fontSize: '12px', color: 'rgba(100,130,160,0.85)', fontWeight: '600', letterSpacing: '0.5px', marginBottom: '8px' }}>
+              {nickname} 的音樂人格
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              {songs.map((song, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <div style={{
-                    width: '24px', height: '24px', borderRadius: '50%', flexShrink: 0,
-                    background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    fontSize: '11px', fontWeight: '800', color: '#fff',
-                  }}>
-                    {i + 1}
-                  </div>
-                  <div>
-                    <div style={{ fontSize: '13px', fontWeight: '700', color: '#2d3748' }}>{song.title}</div>
-                    <div style={{ fontSize: '11px', color: '#a0b4c0', marginTop: '1px' }}>{song.artist}</div>
-                  </div>
-                </div>
+            <div style={{
+              fontSize: '56px', fontWeight: '900', lineHeight: 1,
+              background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
+              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+            }}>
+              {mbti}
+            </div>
+          </div>
+
+          {/* 人格卡片 — 毛玻璃 */}
+          <div style={{
+            background: 'rgba(255,255,255,0.55)',
+            borderRadius: '18px',
+            padding: '20px',
+            border: '1px solid rgba(255,255,255,0.75)',
+            marginBottom: '12px',
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '14px' }}>
+              <div style={{
+                width: '22px', height: '22px', borderRadius: '50%',
+                border: '1.5px solid rgba(126,200,227,0.6)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: '11px', fontWeight: '700', color: '#7ec8e3', flexShrink: 0,
+              }}>1</div>
+              <span style={{ fontSize: '11px', color: 'rgba(120,150,170,0.9)', fontWeight: '700', letterSpacing: '1px' }}>
+                音樂人格
+              </span>
+            </div>
+
+            <div style={{
+              fontSize: '17px', fontWeight: '800', marginBottom: '10px',
+              background: 'linear-gradient(120deg, #ff9ec4, #7ec8e3)',
+              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+            }}>
+              {personality.name}
+            </div>
+            <p style={{ fontSize: '13px', lineHeight: '1.75', color: '#4a5568', margin: '0 0 14px' }}>
+              {personality.desc}
+            </p>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              {preference.genres.map((g, i) => (
+                <span key={i} style={{
+                  fontSize: '11px', padding: '3px 10px', borderRadius: '999px',
+                  background: i % 2 === 0 ? 'rgba(126,200,227,0.18)' : 'rgba(255,158,196,0.18)',
+                  color: i % 2 === 0 ? '#7ec8e3' : '#ff9ec4',
+                  border: `1px solid ${i % 2 === 0 ? 'rgba(126,200,227,0.3)' : 'rgba(255,158,196,0.3)'}`,
+                  fontWeight: '600',
+                }}>{g}</span>
               ))}
             </div>
           </div>
-        )}
 
-        <div style={{ textAlign: 'center', fontSize: '11px', color: '#b0c4d0' }}>
-          mbti-music.vercel.app
+          {/* 推薦歌曲卡片 — 毛玻璃 */}
+          {songs.length > 0 && (
+            <div style={{
+              background: 'rgba(255,255,255,0.55)',
+              borderRadius: '18px',
+              padding: '20px',
+              border: '1px solid rgba(255,255,255,0.75)',
+              marginBottom: '20px',
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
+                <div style={{
+                  width: '22px', height: '22px', borderRadius: '50%',
+                  border: '1.5px solid rgba(255,158,196,0.6)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '11px', fontWeight: '700', color: '#ff9ec4', flexShrink: 0,
+                }}>2</div>
+                <span style={{ fontSize: '11px', color: 'rgba(120,150,170,0.9)', fontWeight: '700', letterSpacing: '1px' }}>
+                  為你精選的歌曲
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                {songs.map((song, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                    <div style={{
+                      width: '28px', height: '28px', borderRadius: '50%', flexShrink: 0,
+                      background: 'rgba(255,255,255,0.6)',
+                      border: `1.5px solid ${i === 0 ? 'rgba(255,158,196,0.5)' : i === 1 ? 'rgba(126,200,227,0.5)' : 'rgba(190,170,255,0.5)'}`,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '12px', fontWeight: '800',
+                      color: i === 0 ? '#ff9ec4' : i === 1 ? '#7ec8e3' : '#b8a8e8',
+                    }}>
+                      {i + 1}
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: '13px', fontWeight: '700', color: '#2d3748', lineHeight: 1.3 }}>{song.title}</div>
+                      <div style={{ fontSize: '11px', color: 'rgba(150,170,190,0.9)', marginTop: '2px' }}>{song.artist}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div style={{ textAlign: 'center', fontSize: '10px', color: 'rgba(150,170,190,0.7)', letterSpacing: '0.5px' }}>
+            mbti-music.vercel.app
+          </div>
         </div>
       </div>
 

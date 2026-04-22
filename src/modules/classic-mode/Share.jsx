@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { supabase } from '../lib/supabase';
+import { supabase } from '../../lib/supabase';
 
 const PERSONALITY_MAP = {
   INTJ: { name: '孤獨的旋律建築師',    desc: '你用理性解構每一首歌，從編曲到歌詞都有你自己的評分標準。你不追流行，只追那些真正打動你內心深處的作品。' },

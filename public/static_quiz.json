@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "text": "週五深夜，窗外細雨綿綿，你一個人坐在房間裡，這時最想聽什麼？",
+    "options": [
+      { "label": "A", "text": "輕柔鋼琴曲，讓心慢慢沉靜", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.22, "danceability": 0.28, "tempo": 0.30, "acousticness": 0.85 } },
+      { "label": "B", "text": "帶點憂傷的吉他民謠，說著離別", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.25, "danceability": 0.30, "tempo": 0.32, "acousticness": 0.78 } },
+      { "label": "C", "text": "甜蜜的情歌，讓人想起某個人", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.35, "danceability": 0.45, "tempo": 0.42, "acousticness": 0.62 } },
+      { "label": "D", "text": "黑暗電子樂，沉浸在孤獨感中", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.60, "danceability": 0.50, "tempo": 0.55, "acousticness": 0.12 } },
+      { "label": "E", "text": "活潑的流行樂，趕走陰鬱情緒", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.78, "danceability": 0.72, "tempo": 0.68, "acousticness": 0.15 } }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "早晨通勤路上，你戴上耳機走出家門，這時你的播放清單是？",
+    "options": [
+      { "label": "A", "text": "輕音樂，邊走邊發呆放空", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.20, "danceability": 0.32, "tempo": 0.28, "acousticness": 0.80 } },
+      { "label": "B", "text": "帶著哀愁的老歌，讓思緒飄遠", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.30, "danceability": 0.28, "tempo": 0.35, "acousticness": 0.72 } },
+      { "label": "C", "text": "浪漫流行，讓人心情愉悅地出門", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.42, "danceability": 0.55, "tempo": 0.48, "acousticness": 0.58 } },
+      { "label": "D", "text": "黑暗搖滾，整個人進入戰鬥模式", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.72, "danceability": 0.45, "tempo": 0.62, "acousticness": 0.10 } },
+      { "label": "E", "text": "充滿活力的 Upbeat 歌，精神百倍", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.85, "danceability": 0.80, "tempo": 0.75, "acousticness": 0.08 } }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "你剛剛失戀了，坐在床上盯著天花板，你會播什麼歌？",
+    "options": [
+      { "label": "A", "text": "安靜的環境音樂，什麼都不想思考", "style": "Chill / Soft", "features": { "valence": 0.42, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.92 } },
+      { "label": "B", "text": "哭泣系情歌，讓眼淚盡情流出來", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.18, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.88 } },
+      { "label": "C", "text": "甜蜜的歌，假裝一切都還好", "style": "Romantic / Sweet", "features": { "valence": 0.62, "energy": 0.28, "danceability": 0.40, "tempo": 0.38, "acousticness": 0.70 } },
+      { "label": "D", "text": "陰鬱搖滾，讓憤怒代替傷心", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.68, "danceability": 0.38, "tempo": 0.58, "acousticness": 0.18 } },
+      { "label": "E", "text": "振奮人心的歌，告訴自己要振作", "style": "Happy / Bright", "features": { "valence": 0.80, "energy": 0.75, "danceability": 0.68, "tempo": 0.70, "acousticness": 0.12 } }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "週末下午，你在咖啡館邊喝咖啡邊看書，背景音樂應該是？",
+    "options": [
+      { "label": "A", "text": "柔和的爵士樂，陽光灑落的感覺", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.25, "danceability": 0.38, "tempo": 0.35, "acousticness": 0.78 } },
+      { "label": "B", "text": "憂傷的法語歌，充滿文藝氣息", "style": "Sad / Emotional", "features": { "valence": 0.25, "energy": 0.22, "danceability": 0.32, "tempo": 0.30, "acousticness": 0.80 } },
+      { "label": "C", "text": "輕快的 Bossa Nova，甜而不膩", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.38, "danceability": 0.52, "tempo": 0.45, "acousticness": 0.72 } },
+      { "label": "D", "text": "後搖滾器樂，讓思緒自由遊走", "style": "Dark / Moody", "features": { "valence": 0.22, "energy": 0.52, "danceability": 0.35, "tempo": 0.48, "acousticness": 0.28 } },
+      { "label": "E", "text": "歡快的獨立流行，心情瞬間明亮", "style": "Happy / Bright", "features": { "valence": 0.82, "energy": 0.68, "danceability": 0.70, "tempo": 0.62, "acousticness": 0.22 } }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "你正在健身房做最後一組訓練，快撐不住了，你需要什麼音樂？",
+    "options": [
+      { "label": "A", "text": "輕柔的冥想音樂，平靜地撐過去", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.28, "danceability": 0.30, "tempo": 0.32, "acousticness": 0.75 } },
+      { "label": "B", "text": "帶著悲壯感的配樂，像是史詩戰役", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.38, "danceability": 0.35, "tempo": 0.40, "acousticness": 0.55 } },
+      { "label": "C", "text": "鼓舞人心的 R&B，充滿甜蜜力量", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.50, "danceability": 0.60, "tempo": 0.52, "acousticness": 0.45 } },
+      { "label": "D", "text": "重金屬，讓腎上腺素飆到最高點", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.95, "danceability": 0.52, "tempo": 0.88, "acousticness": 0.05 } },
+      { "label": "E", "text": "電音 EDM，節奏帶動你衝破極限", "style": "Happy / Bright", "features": { "valence": 0.78, "energy": 0.92, "danceability": 0.88, "tempo": 0.85, "acousticness": 0.05 } }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "深夜12點，你還在工作趕不完的報告，這時候你會播什麼？",
+    "options": [
+      { "label": "A", "text": "Lo-Fi 音樂，讓大腦進入專注模式", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.18, "danceability": 0.35, "tempo": 0.25, "acousticness": 0.82 } },
+      { "label": "B", "text": "沉鬱的鋼琴曲，感覺和自己對話", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.20, "danceability": 0.25, "tempo": 0.28, "acousticness": 0.88 } },
+      { "label": "C", "text": "輕盈的情歌，讓夜晚不那麼孤單", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.32, "danceability": 0.42, "tempo": 0.38, "acousticness": 0.68 } },
+      { "label": "D", "text": "黑暗電子，像是在駭客宇宙中工作", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.58, "danceability": 0.48, "tempo": 0.60, "acousticness": 0.08 } },
+      { "label": "E", "text": "活潑的 J-Pop，讓精神完全清醒", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.72, "danceability": 0.75, "tempo": 0.70, "acousticness": 0.10 } }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "你和朋友開車兜風，窗戶全開、風吹進來，車上應該放什麼歌？",
+    "options": [
+      { "label": "A", "text": "輕鬆的 Acoustic，享受緩慢時光", "style": "Chill / Soft", "features": { "valence": 0.52, "energy": 0.30, "danceability": 0.42, "tempo": 0.35, "acousticness": 0.80 } },
+      { "label": "B", "text": "帶著鄉愁的老歌，聊起過去的事", "style": "Sad / Emotional", "features": { "valence": 0.28, "energy": 0.28, "danceability": 0.35, "tempo": 0.38, "acousticness": 0.65 } },
+      { "label": "C", "text": "夢幻的流行情歌，像電影場景", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.45, "danceability": 0.58, "tempo": 0.50, "acousticness": 0.55 } },
+      { "label": "D", "text": "搖滾經典，車速配合節奏加速", "style": "Dark / Moody", "features": { "valence": 0.25, "energy": 0.78, "danceability": 0.55, "tempo": 0.72, "acousticness": 0.12 } },
+      { "label": "E", "text": "所有人一起大聲唱的 Hits，超嗨", "style": "Happy / Bright", "features": { "valence": 0.92, "energy": 0.88, "danceability": 0.85, "tempo": 0.80, "acousticness": 0.08 } }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "你躺在床上睡不著，腦袋轉個不停，最能陪伴你的音樂是？",
+    "options": [
+      { "label": "A", "text": "輕柔的白噪音混合，讓腦袋放空", "style": "Chill / Soft", "features": { "valence": 0.44, "energy": 0.12, "danceability": 0.18, "tempo": 0.18, "acousticness": 0.95 } },
+      { "label": "B", "text": "細膩的獨白式歌曲，說盡心事", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.22, "danceability": 0.20, "tempo": 0.28, "acousticness": 0.85 } },
+      { "label": "C", "text": "輕聲哼唱的情歌，溫柔又療癒", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.25, "danceability": 0.35, "tempo": 0.32, "acousticness": 0.78 } },
+      { "label": "D", "text": "迷幻氛圍音樂，讓思緒漫無邊際", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.45, "danceability": 0.30, "tempo": 0.42, "acousticness": 0.25 } },
+      { "label": "E", "text": "輕快的兒歌旋律，強迫自己開心", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.62, "danceability": 0.65, "tempo": 0.60, "acousticness": 0.20 } }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "你一個人在家煮飯，廚房裡飄著香氣，你會播什麼歌配這個時刻？",
+    "options": [
+      { "label": "A", "text": "慵懶的爵士樂，像咖啡廳的午後", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.22, "danceability": 0.40, "tempo": 0.30, "acousticness": 0.78 } },
+      { "label": "B", "text": "溫柔的悲歌，邊煮飯邊想事情", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.25, "danceability": 0.30, "tempo": 0.35, "acousticness": 0.72 } },
+      { "label": "C", "text": "甜甜的 K-Pop，讓廚房充滿活力", "style": "Romantic / Sweet", "features": { "valence": 0.78, "energy": 0.48, "danceability": 0.62, "tempo": 0.55, "acousticness": 0.42 } },
+      { "label": "D", "text": "黑暗系獨立音樂，沉浸在自己世界", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.55, "danceability": 0.42, "tempo": 0.52, "acousticness": 0.20 } },
+      { "label": "E", "text": "歡樂的流行歌，一邊做菜一邊跳舞", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.80, "danceability": 0.82, "tempo": 0.75, "acousticness": 0.12 } }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "你剛剛收到一個好消息，興奮得不知如何是好，你要放什麼歌來慶祝？",
+    "options": [
+      { "label": "A", "text": "輕鬆悠揚的曲子，靜靜感受喜悅", "style": "Chill / Soft", "features": { "valence": 0.60, "energy": 0.28, "danceability": 0.45, "tempo": 0.38, "acousticness": 0.72 } },
+      { "label": "B", "text": "感人的歌，感謝一路走來的自己", "style": "Sad / Emotional", "features": { "valence": 0.30, "energy": 0.32, "danceability": 0.35, "tempo": 0.40, "acousticness": 0.65 } },
+      { "label": "C", "text": "浪漫甜蜜的歌，想和最愛的人分享", "style": "Romantic / Sweet", "features": { "valence": 0.80, "energy": 0.50, "danceability": 0.60, "tempo": 0.52, "acousticness": 0.50 } },
+      { "label": "D", "text": "帶有張力的電子樂，感覺征服了世界", "style": "Dark / Moody", "features": { "valence": 0.28, "energy": 0.75, "danceability": 0.62, "tempo": 0.68, "acousticness": 0.10 } },
+      { "label": "E", "text": "全力播放最嗨的 Party 歌，大聲慶祝", "style": "Happy / Bright", "features": { "valence": 0.95, "energy": 0.95, "danceability": 0.92, "tempo": 0.88, "acousticness": 0.05 } }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "旅行途中，你坐在火車上望著窗外風景流逝，你的耳機裡是什麼？",
+    "options": [
+      { "label": "A", "text": "輕盈的 Ambient，和窗外風景融為一體", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.18, "danceability": 0.25, "tempo": 0.25, "acousticness": 0.88 } },
+      { "label": "B", "text": "懷舊老歌，讓思緒回到某個夏天", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.28, "danceability": 0.32, "tempo": 0.35, "acousticness": 0.70 } },
+      { "label": "C", "text": "輕快的旅行歌曲，滿滿的期待感", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.42, "danceability": 0.55, "tempo": 0.48, "acousticness": 0.58 } },
+      { "label": "D", "text": "後搖滾，讓風景看起來像電影畫面", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.60, "danceability": 0.38, "tempo": 0.55, "acousticness": 0.22 } },
+      { "label": "E", "text": "活力滿滿的 Indie Pop，出發的興奮感", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.75, "danceability": 0.72, "tempo": 0.70, "acousticness": 0.18 } }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "你第一次見到喜歡的人，心跳加速，這個時刻的 BGM 是什麼？",
+    "options": [
+      { "label": "A", "text": "輕柔的弦樂，像心跳聲的旋律", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.25, "danceability": 0.38, "tempo": 0.32, "acousticness": 0.80 } },
+      { "label": "B", "text": "帶著忐忑感的慢歌，不敢靠近", "style": "Sad / Emotional", "features": { "valence": 0.25, "energy": 0.28, "danceability": 0.30, "tempo": 0.35, "acousticness": 0.72 } },
+      { "label": "C", "text": "甜蜜的 J-Pop 情歌，粉紅泡泡飄起來", "style": "Romantic / Sweet", "features": { "valence": 0.82, "energy": 0.45, "danceability": 0.60, "tempo": 0.50, "acousticness": 0.55 } },
+      { "label": "D", "text": "充滿張力的電影配樂，命運感十足", "style": "Dark / Moody", "features": { "valence": 0.22, "energy": 0.65, "danceability": 0.42, "tempo": 0.60, "acousticness": 0.18 } },
+      { "label": "E", "text": "輕快的流行歌，整個人笑得合不攏嘴", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.80, "danceability": 0.78, "tempo": 0.75, "acousticness": 0.12 } }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "你在公園的長椅上，看著夕陽慢慢西沉，你會聽什麼？",
+    "options": [
+      { "label": "A", "text": "無歌詞的輕音樂，和夕陽一起靜止", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.15, "danceability": 0.22, "tempo": 0.20, "acousticness": 0.90 } },
+      { "label": "B", "text": "帶著遺憾的抒情歌，想起錯過的人", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.22, "danceability": 0.28, "tempo": 0.30, "acousticness": 0.80 } },
+      { "label": "C", "text": "溫柔的情歌，感謝生命中美好時刻", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.35, "danceability": 0.45, "tempo": 0.40, "acousticness": 0.65 } },
+      { "label": "D", "text": "憂鬱的電子音樂，夕陽是世界末日", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.50, "danceability": 0.38, "tempo": 0.48, "acousticness": 0.20 } },
+      { "label": "E", "text": "歡樂的民謠，感恩今天是美好的一天", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.65, "danceability": 0.68, "tempo": 0.62, "acousticness": 0.30 } }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "你正準備參加一場重要的面試，在門外等待的 5 分鐘，你戴上耳機聽什麼？",
+    "options": [
+      { "label": "A", "text": "冥想音樂，讓呼吸平穩、心神安定", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.92 } },
+      { "label": "B", "text": "緩慢的鋼琴曲，接受任何結果", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.85 } },
+      { "label": "C", "text": "輕快的情歌，告訴自己一切都會好", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.38, "danceability": 0.50, "tempo": 0.45, "acousticness": 0.60 } },
+      { "label": "D", "text": "黑暗系說唱，像是在對自己喊話", "style": "Dark / Moody", "features": { "valence": 0.22, "energy": 0.70, "danceability": 0.55, "tempo": 0.65, "acousticness": 0.12 } },
+      { "label": "E", "text": "超級熱血的勵志歌，衝進去就對了", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.88, "danceability": 0.78, "tempo": 0.82, "acousticness": 0.08 } }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "一個下雨的週日下午，你什麼事都不做只是發呆，音樂是？",
+    "options": [
+      { "label": "A", "text": "雨聲混合吉他，腦袋一片空白", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.12, "danceability": 0.20, "tempo": 0.20, "acousticness": 0.95 } },
+      { "label": "B", "text": "低沉的人聲歌曲，像在訴說秘密", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.18, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.88 } },
+      { "label": "C", "text": "溫柔的鄉村民謠，有點甜有點暖", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.28, "danceability": 0.40, "tempo": 0.35, "acousticness": 0.75 } },
+      { "label": "D", "text": "實驗性電子音樂，像漂浮在虛空中", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.42, "danceability": 0.30, "tempo": 0.45, "acousticness": 0.30 } },
+      { "label": "E", "text": "輕鬆的 Reggae，讓心情跟著搖擺", "style": "Happy / Bright", "features": { "valence": 0.82, "energy": 0.62, "danceability": 0.72, "tempo": 0.58, "acousticness": 0.25 } }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "你一個人逛街，走進一家喜歡的店，希望店裡正在播什麼音樂？",
+    "options": [
+      { "label": "A", "text": "低調的 Nu Jazz，讓人想慢慢逛", "style": "Chill / Soft", "features": { "valence": 0.52, "energy": 0.25, "danceability": 0.42, "tempo": 0.32, "acousticness": 0.72 } },
+      { "label": "B", "text": "帶著心事的獨立樂團歌曲", "style": "Sad / Emotional", "features": { "valence": 0.25, "energy": 0.30, "danceability": 0.35, "tempo": 0.38, "acousticness": 0.68 } },
+      { "label": "C", "text": "甜美的 Pop，讓人想試穿所有衣服", "style": "Romantic / Sweet", "features": { "valence": 0.78, "energy": 0.50, "danceability": 0.65, "tempo": 0.55, "acousticness": 0.40 } },
+      { "label": "D", "text": "冷酷的電子樂，像走進高端時裝秀", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.65, "danceability": 0.60, "tempo": 0.62, "acousticness": 0.10 } },
+      { "label": "E", "text": "活潑的流行歌，整個購物心情超好", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.78, "danceability": 0.80, "tempo": 0.72, "acousticness": 0.12 } }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "朋友突然問你心情如何，你說「還好」但其實心裡有點複雜，這時你聽什麼？",
+    "options": [
+      { "label": "A", "text": "安靜的器樂，不需要說話只是存在", "style": "Chill / Soft", "features": { "valence": 0.42, "energy": 0.18, "danceability": 0.25, "tempo": 0.25, "acousticness": 0.88 } },
+      { "label": "B", "text": "把心事都唱出來的歌，終於被理解", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.25, "danceability": 0.28, "tempo": 0.32, "acousticness": 0.82 } },
+      { "label": "C", "text": "溫柔的歌聲，像朋友在安慰你", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.32, "danceability": 0.42, "tempo": 0.40, "acousticness": 0.68 } },
+      { "label": "D", "text": "壓抑的 Alternative，說不清楚的情緒", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.55, "danceability": 0.38, "tempo": 0.52, "acousticness": 0.22 } },
+      { "label": "E", "text": "歡樂的歌，假裝快樂久了就真的快樂", "style": "Happy / Bright", "features": { "valence": 0.82, "energy": 0.70, "danceability": 0.72, "tempo": 0.65, "acousticness": 0.15 } }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "你剛看完一部讓你淚流滿面的電影，餘韻還在，這時你會聽什麼？",
+    "options": [
+      { "label": "A", "text": "輕柔的背景音樂，讓情緒慢慢沉澱", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.18, "danceability": 0.25, "tempo": 0.25, "acousticness": 0.85 } },
+      { "label": "B", "text": "電影原聲帶，繼續沉浸在悲傷裡", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.22, "danceability": 0.20, "tempo": 0.28, "acousticness": 0.80 } },
+      { "label": "C", "text": "溫暖的情歌，感覺愛是值得的", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.35, "danceability": 0.45, "tempo": 0.42, "acousticness": 0.65 } },
+      { "label": "D", "text": "空靈的氛圍音樂，像是遊走在夢境", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.48, "danceability": 0.32, "tempo": 0.45, "acousticness": 0.25 } },
+      { "label": "E", "text": "振奮人心的歌，人生還是值得期待的", "style": "Happy / Bright", "features": { "valence": 0.80, "energy": 0.68, "danceability": 0.65, "tempo": 0.62, "acousticness": 0.22 } }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "你和很久不見的老朋友重逢，在居酒屋聊了一整晚，背景最合適的歌是？",
+    "options": [
+      { "label": "A", "text": "輕鬆的 Bossa Nova，剛剛好的氛圍", "style": "Chill / Soft", "features": { "valence": 0.58, "energy": 0.28, "danceability": 0.45, "tempo": 0.38, "acousticness": 0.75 } },
+      { "label": "B", "text": "充滿故事感的民謠，說著歲月流逝", "style": "Sad / Emotional", "features": { "valence": 0.28, "energy": 0.30, "danceability": 0.38, "tempo": 0.38, "acousticness": 0.70 } },
+      { "label": "C", "text": "輕快的情懷流行，讓友情感覺像愛情", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.48, "danceability": 0.58, "tempo": 0.52, "acousticness": 0.50 } },
+      { "label": "D", "text": "帶著滄桑的搖滾，聊著人生的艱難", "style": "Dark / Moody", "features": { "valence": 0.25, "energy": 0.62, "danceability": 0.48, "tempo": 0.58, "acousticness": 0.18 } },
+      { "label": "E", "text": "超嗨的老歌，一起笑著回憶青春", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.82, "danceability": 0.80, "tempo": 0.78, "acousticness": 0.12 } }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "新年倒數最後 10 秒，你身邊有人也有，這一刻你希望響起什麼歌？",
+    "options": [
+      { "label": "A", "text": "輕柔的鐘聲音樂，寧靜地迎接新年", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.20, "danceability": 0.30, "tempo": 0.28, "acousticness": 0.82 } },
+      { "label": "B", "text": "帶著感動的抒情歌，感謝過去一年", "style": "Sad / Emotional", "features": { "valence": 0.28, "energy": 0.28, "danceability": 0.32, "tempo": 0.35, "acousticness": 0.68 } },
+      { "label": "C", "text": "溫柔的情歌，緊握身旁的人的手", "style": "Romantic / Sweet", "features": { "valence": 0.80, "energy": 0.42, "danceability": 0.55, "tempo": 0.48, "acousticness": 0.58 } },
+      { "label": "D", "text": "震撼的交響樂，感覺自己在歷史中", "style": "Dark / Moody", "features": { "valence": 0.25, "energy": 0.78, "danceability": 0.45, "tempo": 0.68, "acousticness": 0.15 } },
+      { "label": "E", "text": "狂歡的派對歌，和所有人一起跳舞", "style": "Happy / Bright", "features": { "valence": 0.95, "energy": 0.92, "danceability": 0.90, "tempo": 0.85, "acousticness": 0.08 } }
+    ]
+  }
+]

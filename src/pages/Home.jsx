@@ -12,7 +12,7 @@ function Home() {
       return;
     }
     localStorage.setItem('nickname', nickname.trim());
-    navigate('/quiz');
+    navigate('/v2');
   }
 
   return (
