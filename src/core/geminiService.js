@@ -144,8 +144,8 @@ export async function generateQuizQuestions({ fresh = false } = {}) {
     if (cached) return cached;
   }
 
-  const model = getClient().getGenerativeModel({ model: 'gemini-2.5-flash' });
   return withRetry(async () => {
+    const model = getClient().getGenerativeModel({ model: 'gemini-2.5-flash' });
     const result = await model.generateContent(QUIZ_PROMPT);
     const raw = result.response.text();
     const questions = JSON.parse(stripJsonFence(raw));
@@ -193,9 +193,8 @@ MBTI 判斷規則（依序判斷）：
 }
 
 export async function analyzeMbtiPersonality(avgFeatures) {
-  const model = getClient().getGenerativeModel({ model: 'gemini-2.5-flash' });
-
   return withRetry(async () => {
+    const model = getClient().getGenerativeModel({ model: 'gemini-2.5-flash' });
     const result = await model.generateContent(buildAnalysisPrompt(avgFeatures));
     const raw = result.response.text();
     const analysis = JSON.parse(stripJsonFence(raw));

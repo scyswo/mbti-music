@@ -157,7 +157,7 @@ export function buildLocalAnalysis(avg) {
   const ac = avg.acousticness ?? 0.5;
 
   // MBTI 計算
-  const mbtiType = `${e >= 0.50 ? 'E' : 'I'}${ac >= 0.50 ? 'S' : 'N'}${v >= 0.50 ? 'F' : 'T'}${t >= 0.50 ? 'J' : 'P'}`;
+  const mbtiType = `${e >= 0.55 ? 'E' : 'I'}${ac >= 0.50 ? 'S' : 'N'}${v >= 0.50 ? 'F' : 'T'}${t >= 0.50 ? 'J' : 'P'}`;
 
   // 各維度得分（以極端程度排序）
   const ranked = DIM_CONFIG.map(dim => {

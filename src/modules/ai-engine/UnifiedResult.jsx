@@ -75,6 +75,8 @@ export default function V2Result() {
       setAnalysis(a);
       setTopSongs(s);
       setLoading(false);
+    }).catch(() => {
+      navigate('/v2');
     });
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 

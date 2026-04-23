@@ -10,7 +10,7 @@ async function loadStaticQuestions(n = 10) {
 // 優先 AI 動態生成，失敗則 fallback 本地題庫
 export async function loadQuizQuestions(n = 10) {
   try {
-    const questions = await generateQuizQuestions({ fresh: true });
+    const questions = await generateQuizQuestions();
     return { questions: questions.slice(0, n), isAiGenerated: true };
   } catch (err) {
     const questions = await loadStaticQuestions(n);

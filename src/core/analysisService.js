@@ -14,7 +14,10 @@ export async function runV2Analysis(avg, { onStatus } = {}) {
   }
 
   onStatus?.('loading_songs');
-  const topSongs = await getRecommendedSongs(avg, 3);
+  let topSongs = [];
+  try {
+    topSongs = await getRecommendedSongs(avg, 3);
+  } catch {}
 
   return { analysis, topSongs };
 }
