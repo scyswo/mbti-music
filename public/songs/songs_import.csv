@@ -1,0 +1,359 @@
+spotify_id,name,artist,valence,energy,danceability,tempo,acousticness,lang
+39tEWctWn3a4fmocz97cXg,"說好不哭","周杰倫;五月天 阿信",0.383,0.36,0.54,75.931,0.531,zh
+1bkvGbgK4HU8B7Ue4k7O7I,"光年之外 (電影 《Passengers》 中國區主題曲)","鄧紫棋",0.238,0.668,0.539,175.867,0.4,zh
+13AruKdh8wJhWx6i5dV8X1,"後來的我們","五月天",0.217,0.637,0.486,77.972,0.0116,zh
+1MGgqiQkHHiI9DarZulc12,"不為誰而作的歌","林俊傑",0.255,0.621,0.354,144.095,0.549,zh
+5cU1O9P0EDA0rPkPDykhIm,"怎麼了","周興哲",0.253,0.565,0.502,139.926,0.696,zh
+2uHMTG5xr9Xk7MrXIWrVUH,"玫瑰少年","JOLIN蔡依林",0.287,0.716,0.648,98.014,0.0577,zh
+3LlQoKvVnkVvq3KC8anUn8,"連名帶姓","張惠妹",0.261,0.325,0.336,71.917,0.896,zh
+7tgzj2IqzSgUpxUhjmcF5m,"披星戴月的想你","告五人",0.351,0.453,0.692,99.976,0.263,zh
+07MNtfddtgCo6VrUm3O9dw,"讓我留在你身邊","陳奕迅",0.261,0.653,0.303,169.692,0.0539,zh
+6m2I6ZyWRkxjBrrLVQILfl,"愛情你比我想的閣較偉大 (《當男人戀愛時》電影主題曲)","茄子蛋",0.754,0.654,0.665,149.973,0.00272,zh
+2MBFevxaJ6bX6Lp7jt3UG1,"失落沙洲","徐佳瑩",0.224,0.366,0.422,80.197,0.728,zh
+3NNDJfWMGHuNpvHWTImmlW,"慢冷","梁靜茹",0.269,0.471,0.521,92.054,0.786,zh
+0KWnRv3wxjltYVB3MqjNd2,"Without You","高爾宣 OSN",0.29,0.698,0.662,80.005,0.573,zh
+6XY80Ofqd8j0SGiEdRLwCp,"年少有為","李榮浩",0.289,0.462,0.518,131.892,0.322,zh
+5DSF1VTSaaAFIesJLlltuM,"紅色高跟鞋","蔡健雅",0.492,0.659,0.476,176.018,0.104,zh
+2DcmVSLAg0ZzfOQxDshZHY,"給我一個理由忘記","A-Lin",0.197,0.512,0.399,133.175,0.583,zh
+3OC84eKMxRJ4x0Hcwl9i4i,"刻在我心底的名字 (Your Name Engraved Herein) - 電影<刻在你心底的名字>主題曲","盧廣仲",0.267,0.201,0.425,136.328,0.873,zh
+3xJK8ywApYVEYIDhymYMC6,"遇見","孫燕姿",0.442,0.233,0.631,91.864,0.841,zh
+72OVnXDzugvrCU25lMi9au,"如果可以 - 電影月老主題曲","韋禮安",0.372,0.54,0.54,74.969,0.241,zh
+4E5PyVOBH25CICgTURwGXM,"CHANGE","瘦子E.SO",0.588,0.519,0.737,97.857,0.705,zh
+5CcqjfODDoSpI1xuTg9NCC,"兜圈","林宥嘉",0.305,0.366,0.587,117.959,0.819,zh
+5R3KGS53DCrlbi6cxECAEH,"無人知曉","田馥甄",0.159,0.432,0.471,129.386,0.859,zh
+0BuTVSIbiQGdxW7njjKng7,"讓我為你唱情歌","蕭敬騰",0.42,0.682,0.377,171.106,0.0905,zh
+7uoMF8aYcagKbt5m5wi4MH,"年輪說","楊丞琳",0.312,0.368,0.463,147.619,0.768,zh
+49AQAXswd32dFJUWOegVWO,"Last Dance","伍佰",0.492,0.62,0.463,151.311,0.0158,zh
+4cDVX9pSt4UQEVbbXKodW6,"飞鸟和蝉","任然",0.319,0.563,0.565,147.905,0.741,zh
+4nyO1azSuhT5JrETvzEahs,"你啊你啊 - 電視劇「用九柑仔店」插曲","魏如萱",0.178,0.186,0.584,123.663,0.904,zh
+3O0TfMcoeKC0u035clU5nX,"小情歌（蘇打綠版）","蘇打綠",0.262,0.493,0.535,131.987,0.654,zh
+5Sib99jpYybZAicUMETb3h,"演员","薛之謙",0.183,0.434,0.702,91.618,0.417,zh
+0FIRHGE4loKAH5o5ByiqG0,"你是不是有點動心","吳卓源",0.323,0.349,0.591,131.927,0.634,zh
+79LVKCDq5n3N2k6dtWP4gP,"慢慢喜歡你","莫文蔚",0.375,0.309,0.621,129.759,0.877,zh
+2VEt42QSQxILgEf9B50xxm,"不是因為天氣晴朗才愛你","理想混蛋",0.399,0.271,0.507,135.783,0.753,zh
+69zgyr5HVKdInjeKpq1qHa,"想見你想見你想見你 - 電視劇《想見你》片尾曲","八三夭",0.43,0.666,0.547,129.814,0.4,zh
+3CEkc8f1UDvI7kohz3ARpA,"炙愛 - 女聲版","陳忻玥",0.324,0.505,0.463,75.887,0.26,zh
+4xNDbq22jC2Vdf6QV2uArL,"當你","王心凌",0.208,0.646,0.638,135.98,0.661,zh
+4M7VP5IiIj1saXNFINmxt3,"SPOTLIGHT","頑童Mj116",0.234,0.729,0.732,100.037,0.186,zh
+25sQT3yCEgd1uE6LC9ivcs,"Forever Young","艾怡良",0.323,0.226,0.304,139.593,0.929,zh
+4mDGkFRAqaYosoyWUI7QzM,"在沒有你以後 (feat. 張智成)","謝和弦;張智成",0.521,0.761,0.517,131.985,0.294,zh
+2LoGv4HSbilp1SVoQ10Qw6,"Black Out (feat. 9m88)","ØZI;9m88",0.794,0.559,0.772,100.056,0.556,zh
+5cN75zXR3M4si2toC2eF5C,"我真的受傷了","張學友",0.371,0.0762,0.603,72.917,0.906,zh
+122XVqEGBM36Lp0XNvsgTV,"恆溫","孫盛希",0.27,0.373,0.693,129.974,0.455,zh
+69AvckyixY1AIGRYDZ1QnO,"我很好騙","動力火車",0.201,0.502,0.471,148.009,0.285,zh
+1ZSleGniKMWNrWvK5cGALO,"路過人間 (電視劇《我們與惡的距離》插曲)","郁可唯",0.148,0.386,0.615,129.925,0.825,zh
+4oELKeBS6hWwN3CTuN6acA,"末班車","蕭煌奇",0.162,0.332,0.483,113.855,0.72,zh
+3HH9pAwNfQVXYVUbmHxWwn,"你不知道的事","王力宏",0.303,0.288,0.488,86.993,0.47,zh
+0kcYzEvagMWsp9wL6RxW90,"旅行的意義","陳綺貞",0.25,0.516,0.525,137.972,0.38,zh
+0Q4YuuiCuxIIKUw2fb1cmV,"我們的愛","飛兒樂團",0.135,0.646,0.509,136.054,0.502,zh
+2ek6tL3UTd89rWtSv3gHje,"來個蹦蹦","玖壹壹;陳嘉樺",0.659,0.87,0.829,116.006,0.133,zh
+13bw75oRjvxMv9VGIeM32i,"愛我還是他","陶喆",0.152,0.391,0.465,133.025,0.758,zh
+4JrGpUQothsSVR6iBhR9NC,"飄向北方","黃明志;王力宏",0.279,0.778,0.5,173.906,0.387,zh
+2DZLyqxPBCziw1YJOWPCjQ,"長途夜車","滅火器",0.274,0.567,0.36,102.966,0.0894,zh
+5FGzM47D9MUa0y7qb2D0Ix,"猜不透","丁噹",0.182,0.455,0.565,139.956,0.56,zh
+5vL8cgLYwcoQND7z1m2iRN,"和平分手","梁文音;蕭煌奇",0.342,0.396,0.464,140.744,0.697,zh
+3jdy4aOla1dwYIqwp69JJN,"愛上你算我賤","周湯豪",0.353,0.738,0.478,163.994,0.00432,zh
+6439IQyiZV5I7aOo8UREgm,"擋一根","美秀集團",0.43,0.8,0.518,76.064,0.0799,zh
+2qkJkRmcgpdVhdEhz3GcFX,"十七","S.H.E",0.374,0.563,0.47,149.881,0.137,zh
+2Ub5ZGPsej0A6YpvzhntLL,"輸情歌","J.Sheon",0.557,0.327,0.633,149.959,0.784,zh
+5l94Up12BJSjhH7Mhr2ji4,"紅豆","王菲",0.17,0.408,0.554,111.821,0.27,zh
+0VUORVhLmsxKTSwg4P9CrB,"山海","草東沒有派對",0.306,0.676,0.561,160.044,0.0543,zh
+6yh3aP8HuImur7v8p1P8fz,"起風了 (電視劇《加油, 你是最棒的》主題曲)","吳青峰",0.502,0.396,0.549,73.986,0.487,zh
+5oSEjCvds0BrkQ2dVDHRpF,"所謂的愛","小宇 宋念宇",0.248,0.613,0.447,75.922,0.517,zh
+3kcnCi8MfkMqFKeznqEEOE,"遺失的美好","張韶涵",0.209,0.335,0.619,99.824,0.862,zh
+0bIbgooxvBkww2ZGeu8VMR,"天黑請閉眼","陳零九;邱鋒澤 Feng Ze",0.425,0.731,0.534,169.928,0.28,zh
+6mO5fCJKvB9tr5RAFvBO7z,"家家酒","家家",0.181,0.543,0.552,132.103,0.421,zh
+2fc2vUA5H3mTAr9rQoBDKt,"愛我別走","張震嶽",0.684,0.356,0.646,90.079,0.552,zh
+0mDynC7lAwQyeXevpyDwhV,"夢中的情話","江蕙;阿杜",0.255,0.468,0.558,123.985,0.314,zh
+13tJ9Mkj7cjXxrTjOh0LAN,"關於小熊","蛋堡",0.769,0.371,0.918,92.983,0.591,zh
+53yiHIP3ptxWtT4ambRcgb,"終究還是因為愛","TRASH",0.182,0.8,0.552,126.027,0.0253,zh
+1kzo6QoYHW2Uf2Ccyb5y8i,"如果我們還在一起","宇宙人",0.292,0.636,0.69,172.064,0.389,zh
+3TYzES2lL8BTPE4uudj0Hj,"不得不愛","潘瑋柏;弦子",0.438,0.484,0.719,79.995,0.751,zh
+59lBAMCis4C6NsPdUV35Vz,"愛愛愛","方大同",0.346,0.459,0.473,66.37,0.4,zh
+1M5MN2PnMtf7YhnqukD4xa,"街角的祝福","戴佩妮",0.398,0.353,0.648,95.997,0.923,zh
+4bDJJr7yG31MApWuvEasAo,"有些","颜人中",0.368,0.534,0.683,126.023,0.75,zh
+0n7Ij8XEDfYYFRgBQjNjnf,"愛你","陳芳語",0.142,0.52,0.551,144.024,0.332,zh
+6TBpC71F18s4B6VkW6Qrv3,"體面","于文文",0.205,0.465,0.356,169.852,0.421,zh
+0fQla3BOmDbwE7e6I78LbZ,"錯的人","蕭亞軒",0.239,0.511,0.511,127.826,0.76,zh
+4M8aT4P3AlJUGQ4DqaXJpV,"我不是饒舌歌手","Marz23",0.186,0.658,0.579,80.013,0.0429,zh
+6K9rVmfvmsiWyzP5QUORFF,"正想著你呢","持修",0.353,0.248,0.502,84.026,0.763,zh
+4D0KlK4Fl8lotvsoys1bYQ,"天后","陳勢安",0.286,0.643,0.46,160.044,0.199,zh
+2wzXhxWPX0aODraKNXoJYY,"後來","劉若英",0.375,0.5,0.677,149.784,0.69,zh
+7BPtIXCBWvbl1HqEosWvmK,"I Believe","范逸臣",0.148,0.287,0.569,129.935,0.736,zh
+2UcgToLQiO8Lh76FQwtWbq,"誰","李友廷",0.165,0.263,0.466,128.56,0.643,zh
+1G9KctNOyAM8wMkCFhR3EZ,"寶貝(In The Night)","張懸",0.535,0.274,0.755,110.064,0.848,zh
+2Dd9EXYXI2NNrLG61OtWQv,"手放開","李聖傑",0.458,0.618,0.694,111.943,0.31,zh
+7iZy5sCDT5VkqEYBKy0DTU,"青空未來","五月天 阿信",0.322,0.33,0.497,131.984,0.586,zh
+3ar8egO3eEowO02iMx1Ktu,"買榜","熊仔;吳卓源",0.615,0.548,0.904,135.121,0.409,zh
+7BgO5vZaywxKoHPUBdEzrr,"Tough Love (feat. Eve Ai)","MC HotDog;艾怡良",0.518,0.717,0.738,150.932,0.193,zh
+63ZjEz218reY1rFflqqnqW,"Love More","畢書盡",0.45,0.731,0.548,92.035,0.0887,zh
+02oCAksa3mqdz91Iiq8Ewo,"為你寫詩","吳克群",0.167,0.642,0.477,143.259,0.203,zh
+1bkdJsC4ZWDo8j8ekJWMeD,"煎熬","李佳薇",0.154,0.39,0.379,139.197,0.465,zh
+6cGzTAwvGHsmk4CqIAXoJj,"我還年輕 我還年輕","老王樂隊",0.481,0.563,0.596,127.889,0.152,zh
+4447zXCsgDBPORAbbz3Pia,"Aim High","9m88",0.265,0.494,0.739,88.008,0.7,zh
+2h5j6lshsRkShTQ527SOlj,"他們說我是沒有用的年輕人","好樂團",0.274,0.511,0.59,119.975,0.199,zh
+0FjrLvldGA3kiwLBxv2PSD,"心牆","郭靜",0.338,0.62,0.7,123.879,0.762,zh
+7IiSESHLOtsoEXTlXa0bjJ,"想太多","李玖哲",0.148,0.356,0.485,76.988,0.71,zh
+37BXaP8wCJrH0M3AdtSNyk,"你要的全拿走","胡彥斌",0.157,0.573,0.618,133.986,0.339,zh
+3QiUy2XAQEOEUxNeGlbI5u,"被你遺忘的森林","原子邦妮",0.448,0.627,0.642,95.994,0.343,zh
+6QAn6Crff7sfcqC83fH7dd,"不曾回來過 - 電視劇通靈少女插曲","李千娜",0.316,0.419,0.532,170.011,0.524,zh
+5V3eOL0Zyb3OqhwOmFRvyO,"地球上最浪漫的一首歌","黃鴻升",0.425,0.487,0.57,139.987,0.373,zh
+5EpLeWSwqOG0mZW0R4WdKQ,"海浪","deca joins",0.427,0.444,0.44,115.01,0.0297,zh
+2Y0wPrPQBrGhoLn14xRYCG,"Come & Go (with Marshmello)","Juice WRLD;Marshmello",0.535,0.814,0.625,144.991,0.0172,en
+3h4T9Bg8OVSUYa6danHeH5,"Animals","Maroon 5",0.328,0.742,0.279,189.868,0.000185,en
+4jPy3l0RUwlUI9T5XHBW2m,"Mood (feat. iann dior)","24kGoldn;iann dior",0.732,0.716,0.701,91.007,0.174,en
+5cF0dROlMOK5uNZtivgu50,"Attention","Charlie Puth",0.797,0.613,0.775,100.066,0.109,en
+3Z8FwOEN59mRMxDCtb8N0A,"Be Kind (with Halsey)","Marshmello;Halsey",0.452,0.633,0.63,93.992,0.00776,en
+4QTuyRQshEZYurtIDfE6g0,"By Your Side","Jonas Blue;RAYE",0.634,0.743,0.695,123.007,0.0786,en
+0ClPIeT6MSgfSgQ9ZrJbAq,"Cheating on You","Charlie Puth",0.601,0.535,0.749,123.042,0.0131,en
+7tN0ceaX3JAz6aVtyXn9mn,"Chills","Why Don't We",0.783,0.689,0.615,162.919,0.00483,en
+7BKLCZ1jbUBVqRi2FVlTVw,"Closer","The Chainsmokers;Halsey",0.661,0.524,0.748,95.01,0.414,en
+21TdkDRXuAB3k90ujRU1et,"Cold (feat. Future)","Maroon 5;Future",0.506,0.716,0.697,99.905,0.118,en
+2qzISfdoGJa0AHXqgyJhw7,"Cold Water (feat. Justin Bieber & MØ)","Major Lazer;Justin Bieber;MØ",0.501,0.798,0.608,92.943,0.0736,en
+6Qs4SXO9dwPj5GKvVOv8Ki,"Dancing With A Stranger (with Normani)","Sam Smith;Normani",0.347,0.52,0.741,102.998,0.447,en
+1lsBTdE6MGsKeZCD6llNu7,"Done for Me (feat. Kehlani)","Charlie Puth;Kehlani",0.697,0.632,0.856,112.009,0.193,en
+3PfIrDoz19wz7qK7tYeu62,"Don't Start Now","Dua Lipa",0.679,0.793,0.793,123.95,0.0123,en
+5o3GnrcFtvkdf3zFznuSbA,"Don't Wanna Know (feat. Kendrick Lamar)","Maroon 5;Kendrick Lamar",0.418,0.611,0.783,100.049,0.343,en
+6PQ88X9TkUIAUIZJHW2upE,"Bad Habits","Ed Sheeran",0.591,0.897,0.808,126.026,0.0469,en
+0azC730Exh71aQlOt9Zj3y,"This Is What You Came For","Calvin Harris;Rihanna",0.465,0.927,0.631,123.962,0.199,en
+76hfruVvmfQbw0eYn1nmeC,"Cake By The Ocean","DNCE",0.896,0.753,0.774,119.002,0.152,en
+6Wytqpe4mfmyeT8s1xbczG,"Something In The Way You Move","Ellie Goulding",0.316,0.814,0.658,109.004,0.0398,en
+2zI9NSx3dncJHCw0QClcx0,"Know Me Too Well (with Danna Paola)","New Hope Club;Danna Paola",0.798,0.708,0.757,122.916,0.428,en
+5HCyWlXZPP0y6Gqq8TgA20,"STAY (with Justin Bieber)","The Kid LAROI;Justin Bieber",0.478,0.764,0.591,169.928,0.0383,en
+3cbE0k4dUtvDJhyHjjuDPz,"Love Again","Dua Lipa",0.468,0.667,0.659,115.982,0.00173,en
+26rdOwwjC2UnweK3xeS58u,"GDFR (feat. Sage the Gemini & Lookas)","Flo Rida;Sage The Gemini;Lookas",0.69,0.827,0.657,145.889,0.000704,en
+49dFIRQCQxPWgoH0m38XQ5,"Summer Feelings (feat. Charlie Puth) - From 'SCOOB!' The Album","Lennon Stella;Charlie Puth",0.7,0.686,0.696,115.982,0.262,en
+3p4WMekidOIiyf8SFvfrIC,"Memories Remix (feat. Nipsey Hussle & YG)","Maroon 5;Nipsey Hussle;YG",0.7,0.396,0.807,91.159,0.855,en
+1G5rzVAFlgMqG4gaRujcaA,"Seasons","Maroon 5",0.281,0.504,0.638,140.204,0.509,en
+6tHQAadcluhVV4oD2IvHSk,"Lost","Maroon 5",0.766,0.706,0.766,142.989,0.223,en
+5zFglKYiknIxks8geR8rcL,"Beautiful Mistakes (feat. Megan Thee Stallion)","Maroon 5;Megan Thee Stallion",0.721,0.676,0.713,99.048,0.0377,en
+37BZB0z9T8Xu7U3e65qxFy,"Save Your Tears (with Ariana Grande) (Remix)","The Weeknd;Ariana Grande",0.593,0.825,0.65,118.091,0.0215,en
+5E75Cr0oqxGoX0YYwdC3nZ,"Peaches (Remix) feat. Ludacris, Usher & Snoop Dogg","Justin Bieber;USHER;Snoop Dogg;Ludacris",0.59,0.69,0.64,89.906,0.399,en
+3iYNJX4FTRGlfMQySjlGNr,"Future Nostalgia","Dua Lipa",0.859,0.813,0.875,114.993,0.00618,en
+0EhpEsp4L0oRGM0vmeaN5e,"UN DIA (ONE DAY) (Feat. Tainy)","J Balvin;Dua Lipa;Bad Bunny;Tainy",0.393,0.693,0.571,168.169,0.00536,en
+5zqObw7wjBgL9TDiAymxPn,"Our Song","Anne-Marie;Niall Horan",0.515,0.759,0.595,80.953,0.141,en
+5K6Ssv4Z3zRvxt0P6EKUAP,"Heartbreak Anthem (with David Guetta & Little Mix)","Galantis;David Guetta;Little Mix",0.479,0.784,0.595,124.111,0.216,en
+3tyPOhuVnt5zd5kGfxbCyL,"Where Have You Been","Rihanna",0.443,0.847,0.719,127.96,0.00201,en
+0TEk9SHs3MJl8S0Qgtbzqh,"Too Much (feat. Imanbek & Usher) - Alle Farben Remix","Marshmello;USHER;Alle Farben;Imanbek",0.559,0.878,0.707,126.102,0.00605,en
+2WnAKZefdRHxtBEkRjFOHC,"Anyone","Justin Bieber",0.578,0.521,0.685,115.885,0.185,en
+0oaY19dUwZimIgzn3ZZLZO,"2 Much","Justin Bieber",0.167,0.444,0.583,119.59,0.593,en
+2RSHsoi04658QL5xgQVov3,"Bad Liar","Imagine Dragons",0.0805,0.637,0.307,88.693,0.0732,en
+2tB9OFgAHjAds3cqquLlvp,"Loved By You (feat. Burna Boy)","Justin Bieber;Burna Boy",0.642,0.724,0.79,101.04,0.0696,en
+5QO79kh1waicV47BqGRL3g,"Save Your Tears","The Weeknd",0.644,0.825,0.679,118.049,0.0212,en
+4iJyoBOLtHqaGxP12qzhQI,"Peaches (feat. Daniel Caesar & Giveon)","Justin Bieber;Daniel Caesar;GIVĒON",0.464,0.696,0.677,90.03,0.321,en
+1EsTfiu26JucTyc5npjJU4,"Love You Different (feat. BEAM)","Justin Bieber;BEAM",0.382,0.59,0.756,127.143,0.068,en
+5NU40QTlXrDUJzDBdv79bg,"Deserve You","Justin Bieber",0.409,0.633,0.677,89.934,0.0314,en
+4u4NyuceXP7Uzh7XFJKCr1,"Hold On","Justin Bieber",0.29,0.634,0.658,139.98,0.0106,en
+6T689Jvh5KrSXyaPtUWZtQ,"Criminal","Britney Spears",0.711,0.734,0.696,107.987,0.0485,en
+09CtPGIpYB4BrO8qb1RGsF,"Sorry","Justin Bieber",0.409,0.76,0.655,99.947,0.0797,en
+4umIPjkehX1r7uhmGvXiSV,"Intentions (feat. Quavo)","Justin Bieber;Quavo",0.875,0.546,0.806,147.988,0.298,en
+6rPO02ozF3bM7NnOV4h6s2,"Despacito - Remix","Luis Fonsi;Daddy Yankee;Justin Bieber",0.816,0.816,0.653,178.085,0.228,en
+7nZmah2llfvLDiUjm0kiyz,"Friends (with BloodPop®)","Justin Bieber;BloodPop®",0.649,0.739,0.744,104.99,0.00459,en
+3jHCXrZNz8fQEEf4BpWCAj,"Purpose","Justin Bieber",0.316,0.285,0.481,130.029,0.9,en
+09mhA1SJjMHniZPF4Hcihn,"Company","Justin Bieber",0.425,0.797,0.59,94.948,0.132,en
+190jyVPHYjAqEaOGmMzdyk,"Beauty And A Beat","Justin Bieber;Nicki Minaj",0.526,0.843,0.602,128.003,0.000688,en
+5g4ombYW8dzSHTK0p3pov0,"I Don't Like It, I Love It","The Bellas",0.902,0.738,0.78,117.995,0.499,en
+1diS6nkxMQc3wwC4G1j0bh,"We're Good","Dua Lipa",0.59,0.588,0.722,134.01,0.0319,en
+2MUKw7zEirXqdZZ3xC4hOf,"Hallucinate","Dua Lipa",0.627,0.69,0.627,122.053,0.033,en
+3mC8VlVBwdVxCTq4cYZr64,"Future Nostalgia","Dua Lipa",0.859,0.813,0.875,114.993,0.00618,en
+2oJEygU9oexxrQLQWj365w,"Slow Down","Why Don't We",0.959,0.856,0.777,127.011,0.0121,en
+2Oycxb8QbPkpHTo8ZrmG0B,"Prisoner (feat. Dua Lipa)","Miley Cyrus;Dua Lipa",0.595,0.67,0.781,127.99,0.0103,en
+017PF4Q3l4DBUiWoXk4OWT,"Break My Heart","Dua Lipa",0.467,0.729,0.73,113.011,0.167,en
+0bMbDctzMmTyK2j74j3nF3,"Alone, Pt. II","Alan Walker;Ava Max",0.608,0.668,0.67,88.033,0.536,en
+3Uo7WG0vmLQ07WB4BDwy7D,"willow","Taylor Swift",0.549,0.579,0.392,80.961,0.835,en
+5iTaLzgPI5jRMVAxITcZwT,"Easier – Remix (with Charlie Puth)","5 Seconds of Summer;Charlie Puth",0.608,0.445,0.418,175.686,0.469,en
+698ItKASDavgwZ3WjaWjtz,"Faded","Alan Walker",0.159,0.627,0.468,179.642,0.0281,en
+37f4ITSlgPX81ad2EvmVQr,"Fight Song","Rachel Platten",0.33,0.714,0.564,175.924,0.0549,en
+7fa9MBXhVfQ8P8Df9OEbD8,"Girls Like You (feat. Cardi B) - Cardi B Version","Maroon 5;Cardi B",0.447,0.541,0.779,124.939,0.566,en
+76cy1WJvNGJTj78UqeA5zr,"IDGAF","Dua Lipa",0.51,0.544,0.836,97.028,0.0403,en
+6yIdwnpDHufLWgQcveTPMk,"I Don’t Wanna Live Forever (Fifty Shades Darker)","ZAYN;Taylor Swift",0.0862,0.451,0.735,117.973,0.0631,en
+2bT1PH7Cw3J9p3t7nlXCdh,"If I Can't Have You","Shawn Mendes",0.87,0.823,0.691,123.943,0.489,en
+21TcDbGosp7w9YhTjOszgA,"Imagination","Shawn Mendes",0.333,0.455,0.64,89.948,0.0743,en
+04ZTP5KsCypmtCmQg5tH9R,"I'm a Mess","Bebe Rexha",0.216,0.694,0.63,97.005,0.00281,en
+364dI1bYnvamSnBJ8JcNzN,"Intentions","Justin Bieber;Quavo",0.86,0.553,0.811,148.014,0.317,en
+23L5CiUhw2jV1OIMwthR3S,"In the Name of Love","Martin Garrix;Bebe Rexha",0.168,0.519,0.501,133.99,0.109,en
+7yHEDfrJNd0zWOfXwydNH0,"Into You","Ariana Grande",0.358,0.727,0.636,107.988,0.0161,en
+3707IBa4HnS3zDDoWfeUBl,"I Warned Myself","Charlie Puth",0.579,0.311,0.488,184.112,0.562,en
+7KxhSJOYiqCDclXDBNlFSZ,"Kill Em With Kindness","Selena Gomez",0.399,0.884,0.757,120.013,0.00789,en
+0lYBSQXN6rCTvUZvg9S0lU,"Let Me Love You","DJ Snake;Justin Bieber",0.159,0.715,0.475,199.892,0.0863,en
+7x5xYW5W42OGPAdHUyyguy,"Locked Away (feat. Adam Levine)","R. City;Adam Levine",0.55,0.671,0.509,118.413,0.304,en
+6uFsE1JgZ20EXyU0JQZbUR,"Look What You Made Me Do","Taylor Swift",0.497,0.68,0.773,128.062,0.213,en
+2l8w0zZVn4AZNuzrht7MRT,"Love Me Like You Do - From Fifty Shades Of Grey","Ellie Goulding",0.282,0.606,0.475,94.994,0.247,en
+50kpGaPAhYJ3sGmk6vplg0,"Love Yourself","Justin Bieber",0.515,0.378,0.609,100.43,0.835,en
+2qLMf6TuEC3ruGJg4SMMN6,"Lucky","Jason Mraz;Colbie Caillat",0.669,0.414,0.625,130.088,0.294,en
+7jEyX4bqaCSdMN4D4JNnVj,"Mama","Jonas Blue;William Singe",0.566,0.794,0.738,104.014,0.101,en
+7oUHzZKNKUTrlU7DYxhQ7v,"Maps","Maroon 5",0.879,0.713,0.742,120.032,0.0205,en
+2b8fOow8UzyDFAE27YhOZM,"Memories","Maroon 5",0.575,0.32,0.764,91.019,0.837,en
+4lYTkvMkcNRj9uoSr8Zpws,"Mercy","Shawn Mendes",0.405,0.684,0.563,147.92,0.109,en
+3kwgqoBqTwoAH4nT29TYrq,"Nobody's Love","Maroon 5",0.154,0.567,0.486,93.68,0.31,en
+1louJpMmzEicAn7lzDalPW,"No Promises (feat. Demi Lovato)","Cheat Codes;Demi Lovato",0.595,0.667,0.741,112.956,0.0575,en
+2qT1uLXPVPzGgFOx4jtEuo,"no tears left to cry","Ariana Grande",0.354,0.713,0.699,121.993,0.04,en
+2ZrHbO88rM6Ijeg0aJmSzl,"Patient","Charlie Puth",0.456,0.604,0.675,168.034,0.752,en
+1XGmzt0PVuFgQYYnV2It7A,"Payphone","Maroon 5;Wiz Khalifa",0.545,0.752,0.743,110.015,0.0188,en
+3NLnwwAQbbFKcEcV8hDItk,"Perfect","One Direction",0.397,0.822,0.648,99.933,0.0598,en
+0tgVpDi06FyKpA1z0VMD4v,"Perfect","Ed Sheeran",0.168,0.448,0.599,95.05,0.163,en
+1CUVN2kn7mW5FjkqXTR2W1,"Perfect Strangers","Jonas Blue;JP Cooper",0.709,0.819,0.742,117.986,0.372,en
+7DvQTs0DsiKL9KAGafSayU,"Permission","New Hope Club",0.782,0.792,0.758,105.019,0.0675,en
+44fXOB2eBG8uaQJGwh26Bk,"Physical","Dua Lipa",0.761,0.843,0.647,146.961,0.0137,en
+2hrUO4drrO63i7FYbCLBl2,"Rockabye (feat. Sean Paul & Anne-Marie)","Clean Bandit;Anne-Marie;Sean Paul",0.792,0.73,0.717,102.002,0.383,en
+3ebXMykcMXOcLeJ9xZ17XH,"Scared to Be Lonely","Martin Garrix;Dua Lipa",0.195,0.54,0.584,137.972,0.0895,en
+66VenHDtrQAw7FCjyF2J56,"The Christmas Song (Shawn Mendes & Camila Cabello)","Shawn Mendes;Camila Cabello",0.212,0.181,0.341,83.608,0.888,en
+5jpNBhgAk5OmfB0W5i5NaO,"Piece Of You","Shawn Mendes",0.609,0.628,0.757,100.004,0.0147,en
+2Z8yfpFX0ZMavHkcIeHiO1,"Monster (Shawn Mendes & Justin Bieber)","Shawn Mendes;Justin Bieber",0.549,0.383,0.652,145.765,0.0676,en
+3DXncPQOG4VBw3QHh3S817,"I'm the One (feat. Justin Bieber, Quavo, Chance the Rapper & Lil Wayne)","DJ Khaled;Justin Bieber;Quavo;Chance the Rapper;Lil Wayne",0.811,0.668,0.609,80.924,0.0552,en
+1SJtlNRJDeYHioymcvsqev,"Crying in the Club","Camila Cabello",0.603,0.617,0.334,85.227,0.334,en
+29JrmE89KgRyCxBIzq2Ocw,"Strip That Down (feat. Quavo)","Liam Payne;Quavo",0.546,0.495,0.873,106.033,0.199,en
+0zzVTGyRrWpQu8Fr28NRAv,"OK Not To Be OK","Marshmello;Demi Lovato",0.263,0.837,0.743,103.072,0.0172,en
+6Im9k8u9iIzKMrmV7BWtlF,"34+35","Ariana Grande",0.485,0.585,0.83,109.978,0.237,en
+6mQLN3zRtAp6ovjusyYKrV,"Rewrite The Stars (with James Arthur & Anne-Marie)","James Arthur;Anne-Marie",0.571,0.743,0.67,125.944,0.237,en
+6W5RmgWh46p9RQ4LDezHKE,"Flashlight (Sweet Life Mix) - From Pitch Perfect 2 Soundtrack","Hailee Steinfeld",0.278,0.623,0.517,148.045,0.327,en
+5EbX5xL3O2xT8FxCpYzgUO,"How Far I'll Go - From Moana","Alessia Cara;Disney",0.16,0.544,0.309,180.979,0.155,en
+3wuR0YSNdT9rgWfFi1lctv,"Million Ways","HRVY",0.471,0.803,0.645,106.03,0.0312,en
+4nVBt6MZDDP6tRVdQTgxJg,"Story of My Life","One Direction",0.286,0.663,0.6,121.07,0.225,en
+7F9vK8hNFMml4GtHsaXui6,"Back to You (feat. Bebe Rexha & Digital Farm Animals)","Louis Tomlinson;Bebe Rexha;Digital Farm Animals",0.645,0.53,0.683,75.016,0.207,en
+49COPp81lGS9Hl9OwKlsKl,"Polaroid","Jonas Blue;Liam Payne;Lennon Stella",0.472,0.898,0.652,114.043,0.29,en
+72jbDTw1piOOj770jWNeaG,"Paris","The Chainsmokers",0.219,0.658,0.653,99.99,0.0215,en
+74vs7PD7iG2GnWUGnb8Yuq,"Middle Of The Night","The Vamps;Martin Jensen",0.397,0.749,0.588,130.093,0.0037,en
+2P91MQbaiQOfbiz9VqhqKQ,"I Like Me Better","Lauv",0.419,0.505,0.752,91.97,0.535,en
+7wLK9PAeZMBDVKsm7ptOMn,"positions","Ariana Grande",0.616,0.806,0.734,144.028,0.457,en
+4y4spB9m0Q6026KfkAvy9Q,"Lonely (with benny blanco)","Justin Bieber;benny blanco",0.0927,0.239,0.631,79.859,0.864,en
+5u1n1kITHCxxp8twBcZxWy,"Holy (feat. Chance The Rapper)","Justin Bieber;Chance the Rapper",0.372,0.704,0.673,86.919,0.196,en
+5GhJIMWAw0uMLgkdbt6uMz,"Fallin’ (Adrenaline)","Why Don't We",0.233,0.9,0.606,133.963,0.0101,en
+2GyA33q5rti5IxkMQemRDH,"I Know What You Did Last Summer","Shawn Mendes;Camila Cabello",0.743,0.761,0.687,113.939,0.102,en
+6v3KW9xbzN5yKLt9YKDYA2,"Señorita","Shawn Mendes;Camila Cabello",0.75,0.548,0.759,116.963,0.0379,en
+7xoUc6faLbCqZO6fQEYprd,"One Last Time","Ariana Grande",0.104,0.593,0.628,125.025,0.093,en
+1WkMMavIMc4JZ8cfMmxHkI,"CAN'T STOP THE FEELING! (from DreamWorks Animation's TROLLS)","Justin Timberlake",0.7,0.832,0.669,113.035,0.0106,en
+4S1GTwPVpkSy7CsJIDKPEz,"You Deserve Better","James Arthur",0.696,0.56,0.516,98.94,0.0322,en
+69vToJ9BMbbLlFZo7k7A7B,"You Are The Reason","Calum Scott",0.22,0.235,0.329,171.006,0.918,en
+6WbADFqMvR8N5u0BvtsWQE,"Without You (feat. Sandro Cavazza)","Avicii;Sandro Cavazza",0.279,0.855,0.652,134.009,0.00179,en
+73h4oe03sZy8bXfQLfnqMv,"Who's Laughing Now","Ava Max",0.505,0.641,0.648,184.021,0.00565,en
+0GxQ1A5L9xnMOytbP6eKBG,"What Lovers Do (feat. SZA)","Maroon 5;SZA",0.422,0.598,0.8,109.998,0.0798,en
+4B0JvthVoAAuygILe3n4Bs,"What Do You Mean?","Justin Bieber",0.793,0.567,0.845,125.02,0.59,en
+1HimGOB6BjOaCQYMIF1xtU,"What Am I","Why Don't We",0.368,0.647,0.614,163.862,0.0687,en
+06KyNuuMOX1ROXRhj787tj,"We Don't Talk Anymore (feat. Selena Gomez)","Charlie Puth;Selena Gomez",0.352,0.563,0.728,100.017,0.621,en
+6hLkeOMrhZ2CMLBp2of576,"Wanted","OneRepublic",0.711,0.534,0.668,145.816,0.164,en
+3QGsuHI8jO1Rx4JWLUh9jd,"Treat You Better","Shawn Mendes",0.771,0.82,0.443,82.697,0.107,en
+2NkbRmygVirMQFCjSkyY7Q,"Too Much To Ask","Niall Horan",0.222,0.534,0.508,153.61,0.366,en
+27u7t9d7ZQoyjsCROHuZJ3,"Tick Tock (feat. 24kGoldn)","Clean Bandit;Mabel;24kGoldn",0.946,0.705,0.779,101.022,0.369,en
+3vncluU9e0z6mdXt8hRP37,"This Summer","Maroon 5",0.176,0.766,0.54,98.932,0.000248,en
+4NBTZtAt1F13VvlSKe6KTl,"This Feeling","The Chainsmokers;Kelsea Ballerini",0.449,0.571,0.575,105.049,0.0558,en
+72C7aUQECOhNtnD0AC36ua,"They Don't Know About Us","One Direction",0.336,0.754,0.512,147.89,0.135,en
+7JJmb5XwzOO8jgpou264Ml,"There's Nothing Holdin' Me Back","Shawn Mendes",0.969,0.811,0.866,121.995,0.375,en
+0KKkJNfGyhkQ5aFogxQAPU,"That's What I Like","Bruno Mars",0.86,0.56,0.853,134.066,0.013,en
+1JRK7srBWUtAW7dPabKBwJ,"Teeth","5 Seconds of Summer",0.431,0.448,0.755,139.028,0.0508,en
+7py16W5fWYLFFS6BElKAjn,"Tears (feat. Louisa Johnson)","Clean Bandit;Louisa Johnson",0.298,0.77,0.605,130.037,0.0431,en
+1x5sYLZiu9r5E43kMlt9f8,"Symphony (feat. Zara Larsson)","Clean Bandit;Zara Larsson",0.457,0.629,0.707,122.863,0.259,en
+25sgk305KZfyuqVBQIahim,"Sweet but Psycho","Ava Max",0.628,0.704,0.719,133.002,0.0691,en
+5d6Mjuu2uCGRPYpFjGpCX5,"Sugar","Maroon 5",0.884,0.788,0.748,120.076,0.0591,en
+3zkWCteF82vJwv0hRLba76,"Stitches","Shawn Mendes",0.755,0.754,0.752,149.789,0.0151,en
+6uBhi9gBXWjanegOb2Phh0,"Stay","Zedd;Alessia Cara",0.544,0.622,0.69,102.04,0.253,en
+2DGa7iaidT5s0qnINlwMjJ,"The Spectre","Alan Walker",0.198,0.711,0.654,127.957,0.0214,en
+6RUKPb4LETWmmr3iAEQktW,"Something Just Like This","The Chainsmokers;Coldplay",0.446,0.635,0.617,103.019,0.0498,en
+7J7D2Ezp32LxlYuNTZX48n,"So Far Away (feat. Jamie Scott & Romy Dya) - Nicky Romero Remix","Martin Garrix;David Guetta;Jamie Scott;Romy Dya;Nicky Romero",0.242,0.493,0.569,125.967,0.0196,en
+0uUNN1nSoUx1A4fkDCWDQ7,"So Am I","Ava Max",0.607,0.656,0.682,130.089,0.0737,en
+7qiZfU4dY1lWllzX7mPBI3,"Shape of You","Ed Sheeran",0.931,0.652,0.825,95.977,0.581,en
+2JzZzZUQj3Qff7wapcbKjc,"See You Again (feat. Charlie Puth)","Wiz Khalifa;Charlie Puth",0.283,0.481,0.689,80.025,0.369,en
+5uSFGgIfHMT3osrAd9n9ym,"Forget Me","Lewis Capaldi",0.688,0.746,0.437,203.835,0.255,en
+3KkXRkHbMCARz0aVfEt68P,"Sunflower - Spider-Man: Into the Spider-Verse","Post Malone;Swae Lee",0.913,0.478,0.76,89.908,0.552,en
+6qYkmqFsXbj8CQjAdbYz07,"Blinding Lights","The Weeknd",0.35,0.726,0.515,170.987,0.00152,en
+5vxYlfDlOeNRx9YgE9k2dQ,"Hollow - Lø's Version","Lø Spirit;Dabin;Kai Wachi",0.305,0.525,0.473,144.978,0.173,en
+58zsLZPvfflaiIbNWoA22O,"Human","Rag'n'Bone Man",0.554,0.707,0.602,75.087,0.393,en
+6maTPqynTmrkWIralgGaoP,"If We Ever Broke Up","Mae Stephens",0.94,0.734,0.898,115.948,0.587,en
+48QmG1dfvMuYLxMPt7KSRA,"No Lie","Sean Paul;Dua Lipa",0.463,0.882,0.742,102.04,0.0466,en
+7mykoq6R3BArsSpNDjFQTm,"I Really Want to Stay at Your House","Rosa Walton;Hallie Coggins",0.126,0.738,0.49,124.966,0.00237,en
+2P4OICZRVAQcYAV2JReRfj,"Waiting For Love","Avicii",0.613,0.736,0.579,127.999,0.31,en
+73GKs8oNFFmtomWj7EsSU0,"Last Resort - Reimagined","Falling In Reverse",0.12,0.333,0.356,140.133,0.317,en
+5XUuldRjPXcP5QxyEN4IXT,"Voices In My Head","Falling In Reverse",0.639,0.898,0.546,173.17,0.0266,en
+4RxyIfOAN8HsjBBoKKt0A4,"Fly Me to the Moon","Joytastic Sarah",0.157,0.2,0.721,144.027,0.921,en
+3b9SvMTpQpHbBgbXI8kyp1,"Kodak","WUGZ;Austin Prince;_noah",0.498,0.674,0.8,90.03,0.689,en
+6SZhocIn41GZ4mOF15r42Q,"Rising Up","Fate Under Fire",0.608,0.754,0.567,77.992,0.0478,en
+5mjYQaktjmjcMKcUIcqz4s,"Strangers","Kenya Grace",0.416,0.523,0.628,169.982,0.701,en
+272Wknlq3GPjkoFUuLDHKx,"Doomsday","Jared Benjamin",0.739,0.755,0.71,174.245,0.0603,en
+4NRdJDUsDOgckN1fGxhFdI,"Clown","John Michael Howell",0.789,0.587,0.774,100.041,0.52,en
+0F7FA14euOIX8KcbEturGH,"Old Town Road","Lil Nas X",0.507,0.53,0.907,135.998,0.0578,en
+1SC5rEoYDGUK4NfG82494W,"MONTERO (Call Me By Your Name)","Lil Nas X",0.71,0.503,0.593,178.781,0.293,en
+2UerDbZznc07mmGMD3WfHH,"it boy","bbno$",0.821,0.885,0.763,129.983,0.00179,en
+4K9fCsfAZmLogvDKKIRgCa,"Tek It","Cafuné",0.596,0.913,0.423,146.995,0.0000653,en
+62bOmKYxYg7dhrC6gH9vFn,"Bye Bye Bye","*NSYNC",0.861,0.926,0.61,172.638,0.031,en
+2iUXsYOEPhVqEBwsqP70rE,"Youngblood","5 Seconds of Summer",0.152,0.854,0.597,120.276,0.0169,en
+2plbrEY59IikOBgBGLjaoe,"Die With A Smile","Lady Gaga;Bruno Mars",0.535,0.592,0.521,157.969,0.308,en
+3be9ACTxtcL6Zm4vJRUiPG,"blue","yung kai",0.585,0.317,0.746,97.49,0.933,en
+5SPT1KuklXBFoBc5QdphOC,"The Way I Still Love You","Reynard Silva",0.488,0.709,0.629,86.97,0.615,en
+3SAga35lAPYdjj3qyfEsCF,"Feel It (From “Invincible”)","d4vd",0.429,0.593,0.565,120.509,0.0288,en
+3JsydWaf2Ev4ehaLUjj3SY,"Confident","Justin Bieber;Chance the Rapper",0.892,0.565,0.741,134.122,0.114,en
+3qhlB30KknSejmIvZZLjOD,"End of Beginning","Djo",0.912,0.454,0.689,159.982,0.0351,en
+2K87XMYnUMqLcX3zvtAF4G,"Drag Me Down","One Direction",0.595,0.703,0.731,138.111,0.111,en
+0qOnSQQF0yzuPWsXrQ9paz,"Stereo Hearts (feat. Adam Levine)","Gym Class Heroes;Adam Levine",0.796,0.795,0.646,89.99,0.0319,en
+43iIQbw5hx986dUEZbr3eN,"From The Start","Laufey",0.83,0.339,0.554,80.994,0.886,en
+5pU2jicRzE4NAgXE7rOcKV,"I Will Survive","Demi Lovato",0.805,0.94,0.661,122.001,0.0106,en
+3mPAhyYswPqr9dCTAdCqyV,"1-800","bbno$;Ironmouse",0.883,0.959,0.66,131.975,0.0228,en
+5MMLS3xm12D7N26xlfFApr,"Runaway Baby","Bruno Mars",0.823,0.762,0.658,163.864,0.263,en
+02sy7FAs8dkDNYsHp4Ul3f,"Soda Pop","Saja Boys;蔡康明;Neckwav;Danny Chung;KEVIN WOO;samUIL Lee;KPop Demon Hunters Cast",0.758,0.852,0.841,125.997,0.0816,ko
+3cLXrotzCjYCkN73PewALM,"Good Goodbye","HWASA",0.796,0.59,0.655,99.564,0.295,ko
+1j15Ar0qGDzIR0v3CQv3JL,"Gnarly","KATSEYE",0.663,0.828,0.775,135.021,0.153,ko
+5vNRhkKd0yEAg8suGBpjeY,"APT.","ROSÉ;Bruno Mars",0.939,0.783,0.777,149.027,0.0283,ko
+491ca80N1C63tpoLvAsLKb,"PSYCHO","BABYMONSTER",0.389,0.774,0.824,127.912,0.0659,ko
+3t1TAfnoXfnMclelI70UaX,"Seven (feat. Latto)","Jung Kook;Latto",0.904,0.841,0.788,124.986,0.301,ko
+6aJn7Cst74cj4lNIiPRgav,"Touch","KATSEYE",0.788,0.904,0.739,167.033,0.549,ko
+0fK7ie6XwGxQTIkpFoWkd1,"like JENNIE","JENNIE",0.815,0.743,0.811,130.019,0.281,ko
+4cSp2hlUlAwgurjIqHN592,"Ring Ring","MIRA",0.717,0.746,0.885,102.079,0.158,ko
+198zDKzyktXRG1PGpidY9h,"DRIP","BABYMONSTER",0.704,0.687,0.862,119.972,0.065,ko
+2N9miXnewVmUrgl6JSK1FI,"SPAGHETTI","LE SSERAFIM;j-hope",0.872,0.819,0.9,111.5,0.0813,ko
+1aKvZDoLGkNMxoRYgkckZG,"Magnetic","ILLIT",0.69,0.668,0.797,131.067,0.257,ko
+56Fu41EhpsPqqfDZsj3eaN,"Do It","Stray Kids",0.734,0.922,0.766,105.012,0.138,ko
+09keT5ocFhEd5W5HidiUNq,"Chk Chk Boom","Stray Kids",0.844,0.74,0.925,101.994,0.166,ko
+3598iBWrS4JhJqP5tHlpVK,"THIS IS FOR","TWICE",0.919,0.742,0.796,127.962,0.149,ko
+3coRPMnFg2dJcPu5RMloa9,"Whiplash","aespa",0.748,0.9,0.863,126.023,0.0953,ko
+79f5CcWzdkkDVD4XAIQgKr,"LALALALA","Stray Kids",0.609,0.849,0.705,125.976,0.0647,ko
+6vvPecFTmWxDfEJ6cYT1wa,"Rockstar","LISA",0.568,0.628,0.668,140.053,0.129,ko
+3AoEQRuFf8zVXWqSLo2UOi,"CRAZY","LE SSERAFIM",0.531,0.899,0.802,130.047,0.00953,ko
+5zQUndaoBtXJ10SsApqtvw,"Strategy (feat. Megan Thee Stallion)","TWICE;Megan Thee Stallion",0.687,0.751,0.8,110.043,0.238,ko
+2VqMBiaxblhhBHyB9X4ESl,"Standing Next to You","Jung Kook",0.816,0.809,0.711,106.017,0.0447,ko
+1njlnn8ZKHI77Pe9szIONR,"SHEESH","BABYMONSTER",0.461,0.728,0.774,140.041,0.113,ko
+5XWlyfo0kZ8LF7VSyfS4Ew,"Drama","aespa",0.378,0.872,0.644,131.016,0.164,ko
+49DTiFx70EuJLV7hDsCo6z,"WE GO UP","BABYMONSTER",0.491,0.718,0.678,167.955,0.012,ko
+5sdQOyqq2IDhvmx2lHOpwd,"Super Shy","NewJeans",0.515,0.817,0.776,149.921,0.18,ko
+2CspwnypzT7rcWI9RfsoSb,"Mantra","JENNIE",0.838,0.725,0.894,116.988,0.00434,ko
+6ehWdR7cGDXnT7aKEASJxE,"3D (feat. Jack Harlow)","Jung Kook;Jack Harlow",0.888,0.824,0.853,108.044,0.0322,ko
+0Md02V4hwKO5Vu5B7GD8tQ,"FOREVER","BABYMONSTER",0.644,0.704,0.833,129.986,0.102,ko
+1nD3K6W0atK00pbJXS6JRa,"100","Ella Mai",0.398,0.65,0.312,166.259,0.354,ko
+4uOBL4DDWWVx4RhYKlPbPC,"Queencard","i-dle",0.692,0.834,0.815,129.989,0.0327,ko
+62xU1NllqWBCbkZFTXEqzF,"CEREMONY","Stray Kids",0.697,0.649,0.891,121.067,0.00555,ko
+7tI8dRuH2Yc6RuoTjxo4dU,"Who","Jimin",0.838,0.756,0.66,116.034,0.00289,ko
+7GDgpad2BQVuDUzaxHFakc,"LIKE THAT","BABYMONSTER",0.76,0.5,0.871,101.959,0.32,ko
+6tuVceHAyUCDRhbEC2634b,"masked up (feat. YoungBoy Never Broke Again)","Nettspend;YoungBoy Never Broke Again",0.641,0.949,0.267,71.947,0.000745,ko
+5Q1tv4GTxP3IJeGMOKdrFO,"MEGAVERSE","Stray Kids",0.576,0.73,0.613,160.051,0.00875,ko
+4lR8sYGMGZPvthF2yUfo7T,"Smart","LE SSERAFIM",0.594,0.675,0.799,113.076,0.115,ko
+1OhIn0L6iofnk5bjalWfHq,"Sudden Shower","ECLIPSE",0.217,0.506,0.469,133.403,0.587,ko
+3AjfuVk6olyesS7cVfofBE,"HOT SAUCE","BABYMONSTER",0.811,0.86,0.951,132.975,0.0122,ko
+7mpdNiaQvygj2rHoxkzMfa,"Bite Me","ENHYPEN",0.687,0.781,0.795,104.972,0.285,ko
+74X2u8JMVooG2QbjRxXwR8,"Perfect Night","LE SSERAFIM",0.502,0.82,0.697,136.054,0.1,ko
+56v8WEnGzLByGsDAXDiv4d,"ETA","NewJeans",0.841,0.749,0.812,134.971,0.108,ko
+7AKwWqnoMmvCqBQtcdIECG,"ExtraL (feat. Doechii)","JENNIE;Doechii",0.699,0.726,0.758,139.932,0.0177,ko
+6LuvVxHXQDtsPxtE07Ycbe,"S-Class","Stray Kids",0.672,0.781,0.886,104.996,0.0895,ko
+6je5cTal6PyeITNrOzkCoS,"Welcome to the Show","DAY6",0.377,0.758,0.595,132.01,0.0378,ko
+3entdIWiOuQfcXIkJEABsV,"Really Like You","BABYMONSTER",0.798,0.587,0.828,97.018,0.152,ko
+4WFfPxJv1KRekG6mxn837K,"EYES CLOSED (with ZAYN)","JISOO;ZAYN",0.376,0.737,0.556,75.034,0.2,ko
+02CrqOYzrJR8fYOffhvRZZ,"number one girl","ROSÉ",0.135,0.377,0.288,175.43,0.288,ko
+3TQHPUEVdvdq8ejwEcHUlL,"If I have you only (My love X Nerd Connection)","Nerd Connection",0.137,0.353,0.54,137.859,0.332,ko
+5rfABuYyz0m1IEvLZ52aqv,"Diamonds","Edward Maya;Yohani",0.0767,0.958,0.747,125.062,0.00505,ko
+4CPuDVC8jhhK6lA2DIt8Cf,"Born Again (feat. Doja Cat & RAYE)","LISA;Doja Cat;RAYE",0.374,0.777,0.687,115.01,0.0686,ko
+4QvdQaaVVxFcAB9CTaA9Hl,"You & Me","JENNIE",0.556,0.572,0.788,111.996,0.015,ko
+351KkakA2YtGEXqSEIIasy,"Supernova","aespa",0.368,0.747,0.744,120.077,0.00691,ko
+3AOf6YEpxQ894FmrwI9k96,"Super","SEVENTEEN",0.347,0.88,0.771,137.018,0.162,ko
+0QICKhP44TRnb4EurQ3tN9,"BILLIONAIRE","BABYMONSTER",0.695,0.632,0.951,104.961,0.226,ko
+5sjnkOfTLCLNfkkchI2re2,"UP - KARINA Solo","aespa",0.382,0.781,0.777,98.97,0.0137,ko
+6i8MbzVn4nzyjUcSoVcz7B,"Armageddon","aespa",0.469,0.789,0.695,91.991,0.0651,ko
+0aZG8KWrpRnsGL0loUkfSj,"plot twist","TWS",0.73,0.71,0.808,112.066,0.0102,ko
+7ov3TDp5D00Rnu5R1viX4w,"New Woman (feat. ROSALÍA)","LISA;ROSALÍA",0.314,0.854,0.477,140.515,0.0858,ko
+16iOs2f9G9qRknDgM9cfAw,"Who is she","KISS OF LIFE",0.633,0.648,0.8,134.018,0.112,ko
+3bmpXHVie1GTy37OkXJ7Vc,"2.0","BTS",0.27,0.542,0.929,130.026,0.018,ko
+6Pv2Cowet3sAcKbGrcgHm0,"Eye-Poppin’","KickFlip",0.634,0.863,0.595,90.579,0.0183,ko
+02PyZNzTdzA1Nbxycnv93V,"Body to Body","BTS",0.495,0.788,0.674,120.016,0.113,ko
+2bAQsNqdo62T8akkIvWzGl,"RUDE!","Hearts2Hearts",0.467,0.784,0.78,128.076,0.169,ko
+0KmrKOdScRDVYwWS8hkkdv,"FYA","BTS",0.457,0.817,0.705,128.955,0.00127,ko
+0mYa3o6tlUN5HRippmKmwH,"GO","BLACKPINK",0.203,0.589,0.611,103.124,0.0232,ko
+1k0JAiH11gHL9dc5dfQjQr,"NOT CUTE ANYMORE","ILLIT",0.949,0.736,0.94,98.986,0.243,ko
+5jh0xRA7huSeMxCPAmyCav,"BANG BANG","IVE",0.374,0.908,0.628,152.181,0.0105,ko
+20QI1DhCFz7pN8rATkNguv,"To Reach You","10公分",0.416,0.824,0.571,125.979,0.0139,ko
+4i0HNuFEH6P6K4UnsY5uUh,"Blue Valentine","NMIXX",0.544,0.857,0.592,159.436,0.161,ko

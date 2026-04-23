@@ -41,6 +41,12 @@ export default function V2Quiz() {
     initQuiz();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+  function handleBack() {
+    if (currentIdx === 0 || selectedLabel !== null) return;
+    setAnswers(prev => prev.slice(0, -1));
+    setCurrentIdx(prev => prev - 1);
+  }
+
   async function handleSelect(option) {
     if (selectedLabel !== null) return;
     setSelectedLabel(option.label);
@@ -81,6 +87,7 @@ export default function V2Quiz() {
         total={questions.length}
         selectedLabel={selectedLabel}
         onSelect={handleSelect}
+        onBack={handleBack}
       />
     );
   }
@@ -119,12 +126,19 @@ function LoadingScreen({ message }) {
 }
 
 // ── QuizScreen ────────────────────────────────────────────
-function QuizScreen({ question, currentIdx, total, selectedLabel, onSelect }) {
+function QuizScreen({ question, currentIdx, total, selectedLabel, onSelect, onBack }) {
   const progress = ((currentIdx + 1) / total) * 100;
   return (
     <div className="page-top">
       <div style={{ marginBottom: 24 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 7 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 7 }}>
+          {currentIdx > 0 ? (
+            <button onClick={onBack} disabled={selectedLabel !== null} style={{
+              background: 'none', border: 'none', cursor: selectedLabel !== null ? 'not-allowed' : 'pointer',
+              fontSize: 13, color: '#a0b4c0', fontWeight: 600, padding: '2px 0',
+              opacity: selectedLabel !== null ? 0.4 : 1,
+            }}>← 上一題</button>
+          ) : <span />}
           <span style={{ fontSize: 12, color: '#7a9ab0', fontWeight: 700 }}>問題 {currentIdx + 1} / {total}</span>
           <span style={{ fontSize: 12, color: '#7a9ab0' }}>{Math.round(progress)}%</span>
         </div>
