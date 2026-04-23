@@ -3,7 +3,7 @@
 透過 10 道 AI 生成的情境式問題，分析你的音樂靈魂，對應 16 種 MBTI 人格類型，並從歌曲資料庫中精選 3 首最適合你的歌曲。
 
 **線上體驗：** [mbti-music-1.vercel.app](https://mbti-music-1.vercel.app)
-
+**專案內容：**https://drive.google.com/file/d/1RGikPpSEQxsqztEtHzUMZWu9v6yA5-1R/view?usp=sharing
 ---
 
 ## 功能特色
