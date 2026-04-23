@@ -4,10 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import html2canvas from 'html2canvas';
 import { runV2Analysis } from '../../core/analysisService';
 import SpotifyIframe from '../../components/common/SpotifyIframe';
-import ProgressBar from '../../components/common/ProgressBar';
 import {
-  PREFERENCE_MAP, LANG_LABEL, STYLE_CONFIG, DIM_CONFIG,
-  getDynamicInsight, buildProfileSummary, buildWhyConnection, buildDimTitle,
+  PREFERENCE_MAP, LANG_LABEL, STYLE_CONFIG,
+  buildProfileSummary, buildWhyConnection, buildDimTitle,
 } from '../../helpers/quizConfig';
 import { ALL_STYLES } from '../../helpers/musicMath';
 
@@ -87,8 +86,6 @@ export default function V2Result() {
   const nickname   = localStorage.getItem('nickname') || '你';
   const preference = PREFERENCE_MAP[mbti] || PREFERENCE_MAP['INFP'];
   const profileSummary = buildProfileSummary(avg);
-  const whyConnection  = buildWhyConnection(mbti, avg);
-
   const handleDownloadJpg = async () => {
     if (!shareCardRef.current) return;
     try {

@@ -1,141 +1,193 @@
-# 🎧 MBTI 音樂推薦系統
+# 🎧 MBTI 音樂人格測驗
 
-> 根據人格特質推薦音樂，支援 **AI 動態生成模式** 與 **經典靜態模式** 雙軌並行。
+透過 10 道 AI 生成的情境式問題，分析你的音樂靈魂，對應 16 種 MBTI 人格類型，並從歌曲資料庫中精選 3 首最適合你的歌曲。
 
-**線上展示：** [mbti-music-1.vercel.app](https://mbti-music-1.vercel.app)
-
-**完整介紹：** [說明文件](https://drive.google.com/file/d/14DzfiZHM8SuIMVIpkHs1o6PVflTFlgoY/view?usp=drive_link)
+**線上體驗：** [mbti-music-1.vercel.app](https://mbti-music-1.vercel.app)
 
 ---
 
-## 🚀 系統概述
+## 功能特色
 
-使用者完成 10 題情境式測驗，系統根據五維音樂特徵（valence、energy、danceability、tempo、acousticness）計算 MBTI 人格，並推薦最相符的歌曲。提供兩種模式：AI 引擎模式（Gemini 動態生成題目與分析）與經典模式（靜態題庫 + 本地計算）。
-
----
-
-## 🧠 系統架構
-
-```
-使用者輸入（10 題）
-      ↓
-  quizOrchestrator
-      ├── [AI 模式]  geminiService → 動態生成題目 / MBTI 分析
-      └── [經典模式] quiz_bank.json → 靜態題庫（20 題隨機抽 10）
-      ↓
-  五維特徵平均值計算（musicMath.js）
-      ↓
-  analysisService
-      ├── MBTI 類型推斷（energy / acousticness / valence / tempo）
-      ├── 人格描述（musicPersona、summary、likes、dislikes）
-      └── musicService → Cosine Similarity 歌曲匹配
-      ↓
-  結果頁面
-      ├── MBTI 人格分析卡片
-      ├── Spotify 嵌入播放器
-      ├── 截圖匯出（html2canvas → JPG）
-      └── 可分享連結（/share/:id via Supabase）
-```
+- **AI 動態出題** — Google Gemini 2.5 Flash 即時生成 10 道情境題，每次測驗皆不同
+- **MBTI 人格分析** — AI 根據五維音樂特徵判斷你的 MBTI 類型，並產出有溫度的人格描述
+- **智慧歌曲推薦** — 以 Cosine Similarity 從 Supabase 資料庫找出最匹配的 3 首歌，嵌入 Spotify 播放器
+- **風格偏好量表** — 視覺化呈現你在 5 種音樂風格的傾向分佈
+- **截圖分享卡** — 一鍵下載 JPG 結果卡片，方便分享給朋友
+- **自動容錯** — Gemini 失敗時自動切換本地靜態題庫，Supabase 失敗時歌曲欄位留空，服務不中斷
+- **API Key 輪替** — 支援最多 4 組 Gemini Key，配額耗盡自動切換下一組
 
 ---
 
-## 🛠 技術棧
+## 技術架構
 
 | 層級 | 技術 |
-|---|---|
-| 前端 | React 19、React Router v7、Framer Motion |
-| AI | Google Gemini 2.5 Flash |
-| 資料庫 | Supabase（PostgreSQL）|
-| 音樂 API | Spotify Embed API |
-| 歌曲推薦 | Cosine Similarity（本地計算）|
-| 截圖 | html2canvas |
-| 部署 | Vercel（GitHub CI/CD）|
+|------|------|
+| 前端框架 | React 19、React Router v7 |
+| 動畫 | Framer Motion |
+| AI 引擎 | Google Gemini 2.5 Flash |
+| 資料庫 | Supabase（PostgreSQL） |
+| 音樂播放 | Spotify Embed |
+| 截圖匯出 | html2canvas |
+| 部署 | Vercel |
 
 ---
 
-## ⚙️ 功能特色
+## 系統流程
 
-- **雙模式切換** — AI 引擎模式（Gemini 動態題目）與經典模式（靜態題庫）
-- **多語言歌曲庫** — 中文、英文、韓文三個 CSV 歌曲資料集
-- **Cosine Similarity 推薦** — 基於五維特徵向量匹配最相符歌曲
-- **Gemini API 備援機制** — 429 自動 retry（指數退避）、quota 耗盡自動換 key、503 直接 fallback 本地題庫
-- **localStorage 快取** — 題目快取 30 分鐘，減少 API 呼叫
-- **截圖分享卡** — 純文字隱藏卡片（繞過 iframe 跨域限制）
-- **永久分享連結** — 結果儲存 Supabase，唯一 ID 對應分享頁
+```
+使用者輸入暱稱
+       ↓
+  quizOrchestrator
+       ├── [AI 正常] geminiService → Gemini 動態生成 10 題（快取 30 分鐘）
+       └── [AI 失敗] static_quiz.json → 本地題庫隨機抽 10 題
+       ↓
+  使用者作答（每題對應五維特徵值）
+       ↓
+  musicMath.js → 計算五維特徵平均值 & 風格偏好權重
+       ↓
+  analysisService
+       ├── [AI 正常] Gemini 分析 MBTI 人格 + 描述文字
+       └── [AI 失敗] buildLocalAnalysis → 本地規則產生人格描述
+       ↓
+  musicService → Supabase 查詢 + Cosine Similarity 匹配前 3 首歌
+       ↓
+  結果頁面
+       ├── MBTI 類型 + 音樂人格稱號
+       ├── 風格偏好量表
+       ├── 偏好分析（喜歡 / 不偏好 / 聆聽時段）
+       ├── Spotify 嵌入播放器（3 首推薦歌曲）
+       └── 截圖下載 / 複製分享連結
+```
 
 ---
 
-## 📁 專案結構
+## 專案結構
 
 ```
 src/
 ├── core/
-│   ├── geminiService.js      # Gemini AI 題目生成 / MBTI 分析（含 retry + key rotation）
+│   ├── geminiService.js      # Gemini API 整合（Key 輪替、指數退避、快取）
 │   ├── analysisService.js    # 分析流程協調
-│   ├── musicService.js       # 歌曲推薦引擎（CSV + Supabase）
-│   └── quizOrchestrator.js   # 題目載入（AI 優先，fallback 本地）
+│   ├── musicService.js       # Supabase 歌曲查詢
+│   └── quizOrchestrator.js   # AI 出題 / 靜態 fallback
 ├── modules/
 │   ├── ai-engine/
 │   │   ├── MainQuiz.jsx      # AI 模式測驗頁
-│   │   └── UnifiedResult.jsx # 結果頁（含截圖分享）
+│   │   └── UnifiedResult.jsx # AI 模式結果頁
 │   └── classic-mode/
-│       ├── Quiz.jsx          # 經典模式測驗頁
-│       ├── Loading.jsx       # 分析載入頁
-│       ├── Result.jsx        # 結果展示頁
-│       └── Share.jsx         # 公開分享頁
+│       ├── Quiz.jsx          # 經典模式測驗頁（V1）
+│       ├── Loading.jsx
+│       ├── Result.jsx
+│       └── Share.jsx
 ├── helpers/
-│   ├── musicMath.js          # Cosine Similarity 計算
-│   └── quizConfig.js         # 題目設定
+│   ├── musicMath.js          # Cosine Similarity、特徵正規化、風格權重
+│   └── quizConfig.js         # MBTI 映射表、本地分析 fallback
 ├── components/common/
 │   ├── ProgressBar.jsx
 │   └── SpotifyIframe.jsx
-├── agents/                   # V1 多代理人工具（orchestrator + tools）
-└── pages/
-    └── Home.jsx
+├── agents/                   # V1 Orchestrator 工具鏈
+└── pages/Home.jsx
 public/
-├── quiz_bank.json            # 靜態題庫（20 題）
-└── songs/
-    ├── CH_1.csv              # 中文歌曲庫
-    ├── EN_1.csv              # 英文歌曲庫
-    └── KPOP_1.csv            # 韓文歌曲庫
+└── static_quiz.json          # 本地備用題庫（25 題）
 ```
 
 ---
 
-## 🔀 路由結構
+## 快速開始
+
+### 1. 安裝依賴
+
+```bash
+npm install
+```
+
+### 2. 建立 `.env` 設定檔
+
+在專案根目錄建立 `.env`（請勿提交至 Git）：
+
+```env
+# Gemini API Key（至少填一組，最多支援 4 組自動輪替）
+REACT_APP_GEMINI_API_KEY=你的金鑰
+REACT_APP_GEMINI_API_KEY_1=備用金鑰_1
+REACT_APP_GEMINI_API_KEY_2=備用金鑰_2
+REACT_APP_GEMINI_API_KEY_3=備用金鑰_3
+
+# Supabase
+REACT_APP_SUPABASE_URL=https://你的專案.supabase.co
+REACT_APP_SUPABASE_ANON_KEY=你的anon金鑰
+```
+
+### 3. Supabase `songs` 資料表欄位
+
+| 欄位 | 類型 | 說明 |
+|------|------|------|
+| `spotify_id` | text | Spotify Track ID |
+| `name` | text | 歌曲名稱 |
+| `artist` | text | 歌手名稱 |
+| `lang` | text | 語言（`zh` / `ko` / `en`） |
+| `valence` | float | 正向感 0.0–1.0 |
+| `energy` | float | 能量強度 0.0–1.0 |
+| `danceability` | float | 舞動感 0.0–1.0 |
+| `tempo` | float | BPM（程式自動正規化為 0–1） |
+| `acousticness` | float | 原音感 0.0–1.0 |
+
+### 4. 啟動開發伺服器
+
+```bash
+npm start
+# 瀏覽器開啟 http://localhost:3000
+```
+
+### 5. 打包部署
+
+```bash
+npm run build
+```
+
+---
+
+## 路由結構
 
 | 路徑 | 頁面 | 說明 |
-|---|---|---|
-| `/` | Home | 首頁，模式選擇 |
-| `/quiz` | ClassicQuiz | 經典模式測驗 |
-| `/loading` | ClassicLoading | 分析載入中 |
-| `/result` | ClassicResult | 經典模式結果 |
+|------|------|------|
+| `/` | Home | 首頁，輸入暱稱 |
+| `/v2` | MainQuiz | AI 模式測驗（主要入口） |
+| `/v2/result` | UnifiedResult | AI 模式結果頁 |
+| `/quiz` | ClassicQuiz | 經典模式測驗（V1） |
+| `/loading` | ClassicLoading | 載入頁 |
+| `/result` | ClassicResult | 經典模式結果頁 |
 | `/share/:id` | ClassicShare | 公開分享頁 |
-| `/v2` | MainQuiz | AI 引擎測驗 |
-| `/v2/result` | UnifiedResult | AI 引擎結果 |
 
 ---
 
-## 🧩 遇到的問題與解法
+## MBTI 判斷規則
 
-**問題：** Gemini API 429 / 503 / quota 耗盡導致服務中斷  
-**解法：** 三層錯誤處理：429 指數退避 retry（15s→30s→60s）、quota 耗盡自動切換備用 key、503 直接 throw 並 fallback 本地題庫
+根據使用者 10 題的五維特徵平均值依序判斷：
 
-**問題：** MBTI 無論如何都回傳 `ESTJ`  
-**解法：** `mbtiTool` 讀取 `answers.EI`（字串），而 Quiz 儲存 `answers.E / answers.I`（數字），修正為直接比較數字格式
-
-**問題：** Supabase 陣列欄位與 `.contains()` 型別不匹配  
-**解法：** 改為客戶端過濾 + 本地 CSV 作為備援
-
-**問題：** Spotify iframe 被 html2canvas 跨域封鎖  
-**解法：** 截圖目標改為隱藏純文字卡片，不含 iframe
+| 維度 | 規則 |
+|------|------|
+| E vs I | energy ≥ 0.55 → E，否則 → I |
+| S vs N | acousticness ≥ 0.50 → S，否則 → N |
+| T vs F | valence ≥ 0.50 → F，否則 → T |
+| J vs P | tempo ≥ 0.50 → J，否則 → P |
 
 ---
 
-## 💡 學習收穫
+## 音樂風格特徵對照
 
-- **多代理人系統設計** — Orchestrator 模式協調並行非同步工具
-- **AI 服務可靠性** — retry、key rotation、graceful fallback 的實作
-- **向量相似度推薦** — 基於 Cosine Similarity 的輕量本地推薦引擎
-- **全端整合** — React 前端 + Supabase PostgreSQL + Spotify API + Gemini AI
-- **可分享內容架構** — 唯一 ID 持久化結果，支援社群分享
+| 風格 | valence | energy | acousticness | tempo（正規化） |
+|------|---------|--------|--------------|----------------|
+| Chill / Soft | 0.4–0.6 | 0.1–0.4 | 0.6–1.0 | 0.2–0.4 |
+| Sad / Emotional | 0.0–0.3 | 0.1–0.4 | 0.5–0.9 | 0.2–0.45 |
+| Romantic / Sweet | 0.5–0.8 | 0.2–0.5 | 0.5–0.85 | 0.3–0.55 |
+| Dark / Moody | 0.0–0.3 | 0.4–0.8 | 0.0–0.4 | 0.4–0.7 |
+| Happy / Bright | 0.7–1.0 | 0.6–1.0 | — | 0.55–0.9 |
+
+---
+
+## 注意事項
+
+- Gemini 免費方案每日有配額限制，建議設定多組 Key 輪替
+- 配額全數耗盡或 AI 服務異常時，系統自動切換 `static_quiz.json` 靜態題庫繼續服務
+- Spotify Embed 在無痕模式或部分地區可能無法播放
+- `.env` 中的 API Key 在 React 前端為 client-side 暴露，正式環境建議透過後端 proxy 呼叫
