@@ -201,10 +201,10 @@
     "id": 21,
     "text": "凌晨三點睡不著望著天花板，你最想要什麼感覺？",
     "options": [
-      { "label": "A", "text": "算了不睡了，跟安靜和平共處。", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.88 } },
-      { "label": "B", "text": "躲在黑暗裡，獨自享受孤獨。", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.45, "danceability": 0.25, "tempo": 0.45, "acousticness": 0.35 } },
-      { "label": "C", "text": "抱著被子，幻想他在身邊陪我。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.22, "danceability": 0.35, "tempo": 0.32, "acousticness": 0.80 } },
-      { "label": "D", "text": "盯著呼吸，感覺自己慢慢下沉。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.12, "danceability": 0.20, "tempo": 0.20, "acousticness": 0.92 } },
+      { "label": "A", "text": "身心都很放鬆，靜靜享受這份平靜", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.88 } },
+      { "label": "B", "text": "心情非常焦躁，被負面情緒包圍", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.45, "danceability": 0.25, "tempo": 0.45, "acousticness": 0.35 } },
+      { "label": "C", "text": "想抱著被子，感覺有人陪我。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.22, "danceability": 0.35, "tempo": 0.32, "acousticness": 0.80 } },
+      { "label": "D", "text": "身心都很放鬆，靜靜享受這份平靜。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.12, "danceability": 0.20, "tempo": 0.20, "acousticness": 0.92 } },
       { "label": "E", "text": "乾脆起來打電動，瘋狂到天亮。", "style": "Happy / Bright", "features": { "valence": 0.80, "energy": 0.78, "danceability": 0.72, "tempo": 0.72, "acousticness": 0.15 } }
     ]
   },
