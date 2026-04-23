@@ -63,7 +63,9 @@ export default function V2Result() {
     if (initCalledRef.current) return;
     initCalledRef.current = true;
 
+    const nickname = localStorage.getItem('nickname') || '匿名';
     runV2Analysis(avg, {
+      nickname,
       onStatus: status => {
         if (status === 'analyzing')     setLoadingMsg('AI 正在分析你的音樂靈魂...');
         if (status === 'loading_songs') setLoadingMsg('正在從音樂庫中尋找最匹配的歌曲...');

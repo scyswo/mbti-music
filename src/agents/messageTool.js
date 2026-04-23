@@ -88,11 +88,6 @@ const MESSAGES = {
 };
 
 export function messageTool(mbtiType) {
-  console.log('[Agent] Tool 3 啟動：隨機抽取推薦語...', mbtiType);
-
   const msgs = MESSAGES[mbtiType] || MESSAGES['INFP'];
-  const result = msgs[Math.floor(Math.random() * msgs.length)];
-
-  console.log('[Agent] Tool 3 完成：', result);
-  return result;
+  return msgs[Math.floor(Math.random() * msgs.length)];
 }

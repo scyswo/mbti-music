@@ -23,8 +23,6 @@ function fillByCompat(matched, pool, mbtiType) {
 }
 
 export async function musicTool(mbtiType) {
-  console.log('[Agent] Tool 4 啟動：從 Supabase 查詢推薦歌曲...', mbtiType);
-
   try {
     const { data, error } = await supabase
       .from('songs')
@@ -37,17 +35,13 @@ export async function musicTool(mbtiType) {
     let matched = (data || []).sort(() => Math.random() - 0.5);
 
     if (matched.length < 3) {
-      console.warn('[Agent] Tool 4 警告：符合歌曲不足，依相符度補充');
       const { data: all } = await supabase.from('songs').select('*');
       matched = fillByCompat(matched, all || [], mbtiType);
     }
 
-    const result = matched.slice(0, 3);
-    console.log(`[Agent] Tool 4 完成：找到 ${result.length} 首歌`);
-    return result;
+    return matched.slice(0, 3);
 
-  } catch (err) {
-    console.error('[Agent] Tool 4 錯誤，改從本地讀取：', err);
+  } catch {
     try {
       const res = await fetch('/songs.json');
       const allSongs = await res.json();

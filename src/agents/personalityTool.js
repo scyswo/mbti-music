@@ -72,10 +72,5 @@ const PERSONALITY_MAP = {
 };
 
 export function personalityTool(mbtiType) {
-  console.log('[Agent] Tool 2 啟動：查詢人格描述...', mbtiType);
-
-  const result = PERSONALITY_MAP[mbtiType] || PERSONALITY_MAP['INFP'];
-
-  console.log('[Agent] Tool 2 完成：', result.name);
-  return result;
+  return PERSONALITY_MAP[mbtiType] || PERSONALITY_MAP['INFP'];
 }
