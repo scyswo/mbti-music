@@ -99,31 +99,19 @@ function Result() {
   }, []);
 
   const handleDownloadJpg = async () => {
-    const el = shareCardRef.current;
-    if (!el) return;
+    if (!shareCardRef.current) return;
     try {
-      el.style.left = '0px';
-      el.style.opacity = '0';
-      const canvas = await html2canvas(el, {
+      const canvas = await html2canvas(shareCardRef.current, {
         backgroundColor: '#ffd6e8',
         scale: 2,
         useCORS: true,
-        allowTaint: true,
         logging: false,
       });
-      el.style.left = '-9999px';
-      el.style.opacity = '';
-
       const link = document.createElement('a');
       link.download = `mbti-music-${mbti || 'result'}.jpg`;
       link.href = canvas.toDataURL('image/jpeg', 0.92);
-      link.style.display = 'none';
-      document.body.appendChild(link);
       link.click();
-      document.body.removeChild(link);
-    } catch {
-      el.style.left = '-9999px';
-      el.style.opacity = '';
+    } catch (e) {
       alert('截圖失敗，請嘗試長按畫面儲存圖片');
     }
   };

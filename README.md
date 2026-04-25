@@ -4,7 +4,6 @@
 
 **線上體驗：** [mbti-music-1.vercel.app](https://mbti-music-1.vercel.app)
 
-**專案內容：** [點擊網址](https://drive.google.com/file/d/1RGikPpSEQxsqztEtHzUMZWu9v6yA5-1R/view?usp=sharing)
 ---
 
 ## 功能特色

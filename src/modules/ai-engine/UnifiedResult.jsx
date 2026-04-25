@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import html2canvas from 'html2canvas';
 import { runV2Analysis } from '../../core/analysisService';
 import SpotifyIframe from '../../components/common/SpotifyIframe';
+import { supabase } from '../../lib/supabase';
 import {
   PREFERENCE_MAP, LANG_LABEL, STYLE_CONFIG,
   buildProfileSummary, buildWhyConnection, buildDimTitle,
@@ -51,6 +52,8 @@ export default function V2Result() {
   const [analysis, setAnalysis]     = useState(null);
   const [topSongs, setTopSongs]     = useState([]);
   const [copyMsg, setCopyMsg]       = useState('');
+  const [msgText, setMsgText]       = useState('');
+  const [msgStatus, setMsgStatus]   = useState('idle'); // 'idle' | 'sending' | 'sent' | 'error'
   const shareCardRef = useRef(null);
   const initCalledRef = useRef(false);
 
@@ -89,30 +92,16 @@ export default function V2Result() {
   const preference = PREFERENCE_MAP[mbti] || PREFERENCE_MAP['INFP'];
   const profileSummary = buildProfileSummary(avg);
   const handleDownloadJpg = async () => {
-    const el = shareCardRef.current;
-    if (!el) return;
+    if (!shareCardRef.current) return;
     try {
-      // 暫時移到可視範圍讓 html2canvas 正確渲染
-      el.style.left = '0px';
-      el.style.opacity = '0';
-      const canvas = await html2canvas(el, {
-        backgroundColor: '#f8f4f0', scale: 2, useCORS: true, allowTaint: true, logging: false,
+      const canvas = await html2canvas(shareCardRef.current, {
+        backgroundColor: '#f8f4f0', scale: 2, useCORS: true, logging: false,
       });
-      el.style.left = '-9999px';
-      el.style.opacity = '';
-
       const link = document.createElement('a');
       link.download = `mbti-music-${mbti || 'result'}.jpg`;
       link.href = canvas.toDataURL('image/jpeg', 0.92);
-      link.style.display = 'none';
-      document.body.appendChild(link);
       link.click();
-      document.body.removeChild(link);
-    } catch {
-      el.style.left = '-9999px';
-      el.style.opacity = '';
-      alert('截圖失敗，請嘗試長按畫面儲存圖片');
-    }
+    } catch { alert('截圖失敗，請嘗試長按畫面儲存圖片'); }
   };
 
   const handleCopyLink = () => {
@@ -360,6 +349,67 @@ export default function V2Result() {
         <button className="btn" onClick={handleRetry}>🔄 重新測驗</button>
         <button className="btn-ghost" onClick={handleDownloadJpg}>📸 截圖下載 JPG</button>
         <button className="btn-ghost" onClick={handleCopyLink}>{copyMsg || '🔗 複製分享連結'}</button>
+      </motion.div>
+
+      {/* 留言區塊 */}
+      <motion.div {...su(0.78)} className="card" style={{ marginTop: '16px' }}>
+        <div style={{ fontSize: '12px', color: '#a0b4c0', fontWeight: '700', letterSpacing: '1px', marginBottom: '12px' }}>
+          💬 想給開發者說的話
+        </div>
+        {msgStatus === 'sent' ? (
+          <motion.p
+            initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
+            style={{ fontSize: '14px', color: '#7ec8e3', fontWeight: '600', textAlign: 'center', padding: '12px 0' }}
+          >
+            謝謝你的留言，我看到了 🎵
+          </motion.p>
+        ) : (
+          <>
+            <textarea
+              value={msgText}
+              onChange={e => setMsgText(e.target.value)}
+              maxLength={150}
+              placeholder="任何想說的話都可以留下來 :)"
+              style={{
+                width: '100%', boxSizing: 'border-box',
+                minHeight: '80px', resize: 'none',
+                border: '1.5px solid rgba(126,200,227,0.3)',
+                borderRadius: '12px', padding: '10px 12px',
+                fontSize: '14px', color: '#2d3748', lineHeight: '1.6',
+                background: 'rgba(248,252,255,0.8)',
+                outline: 'none', fontFamily: 'inherit',
+              }}
+            />
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '8px' }}>
+              <span style={{ fontSize: '11px', color: '#b0c4d0' }}>{msgText.length} / 150</span>
+              <button
+                onClick={async () => {
+                  if (!msgText.trim() || msgStatus === 'sending') return;
+                  setMsgStatus('sending');
+                  const { error } = await supabase.from('messages').insert([{
+                    nickname: localStorage.getItem('nickname') || '匿名',
+                    mbti_type: mbti,
+                    content: msgText.trim(),
+                  }]);
+                  setMsgStatus(error ? 'error' : 'sent');
+                }}
+                disabled={!msgText.trim() || msgStatus === 'sending'}
+                style={{
+                  padding: '7px 18px', borderRadius: '20px', border: 'none',
+                  background: msgText.trim() ? 'linear-gradient(120deg, #ff9ec4, #7ec8e3)' : 'rgba(180,200,220,0.3)',
+                  color: msgText.trim() ? '#fff' : '#b0c4d0',
+                  fontSize: '13px', fontWeight: '700', cursor: msgText.trim() ? 'pointer' : 'not-allowed',
+                  transition: 'all 0.2s',
+                }}
+              >
+                {msgStatus === 'sending' ? '傳送中...' : '送出'}
+              </button>
+            </div>
+            {msgStatus === 'error' && (
+              <p style={{ fontSize: '12px', color: '#e53e3e', marginTop: '6px' }}>送出失敗，請稍後再試</p>
+            )}
+          </>
+        )}
       </motion.div>
 
     </div>

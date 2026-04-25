@@ -5,9 +5,9 @@
     "options": [
       { "label": "A", "text": "我會起來打掃，讓自己忙一點。", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.82, "danceability": 0.75, "tempo": 0.72, "acousticness": 0.10 } },
       { "label": "B", "text": "我就想躺著看雨，什麼都不做。", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.22, "danceability": 0.28, "tempo": 0.28, "acousticness": 0.82 } },
-      { "label": "C", "text": "翻翻舊相簿，沉浸在回憶裡。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.25, "danceability": 0.22, "tempo": 0.30, "acousticness": 0.75 } },
+      { "label": "C", "text": "翻翻舊相簿，沉浸在回憶裡。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.25, "danceability": 0.22, "tempo": 0.30, "acousticness": 0.52 } },
       { "label": "D", "text": "我會關燈躲著，享受黑暗的安靜。", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.62, "danceability": 0.32, "tempo": 0.55, "acousticness": 0.22 } },
-      { "label": "E", "text": "我想點個蠟燭，安靜地想念他。", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.30, "danceability": 0.40, "tempo": 0.38, "acousticness": 0.72 } }
+      { "label": "E", "text": "我想點個蠟燭，安靜地想念他。", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.55, "danceability": 0.48, "tempo": 0.55, "acousticness": 0.38 } }
     ]
   },
   {
@@ -15,8 +15,8 @@
     "text": "早上上班通勤，你戴上耳機走去搭車，心情是甚麼?",
     "options": [
       { "label": "A", "text": "慢慢走就好，想跟人群隔開。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.20, "danceability": 0.32, "tempo": 0.28, "acousticness": 0.80 } },
-      { "label": "B", "text": "現在心情超悶，不想被打擾。", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.30, "danceability": 0.28, "tempo": 0.35, "acousticness": 0.72 } },
-      { "label": "C", "text": "其實還蠻期待今天有好事發生。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.42, "danceability": 0.55, "tempo": 0.48, "acousticness": 0.58 } },
+      { "label": "B", "text": "現在心情超悶，不想被打擾。", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.30, "danceability": 0.28, "tempo": 0.35, "acousticness": 0.50 } },
+      { "label": "C", "text": "其實還蠻期待今天有好事發生。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.60, "danceability": 0.62, "tempo": 0.60, "acousticness": 0.35 } },
       { "label": "D", "text": "耳機開最大聲，切換戰鬥模式。", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.72, "danceability": 0.45, "tempo": 0.62, "acousticness": 0.10 } },
       { "label": "E", "text": "心情超棒！充滿活力迎接今天。", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.85, "danceability": 0.80, "tempo": 0.75, "acousticness": 0.08 } }
     ]
@@ -26,8 +26,8 @@
     "text": "你剛剛失戀了，坐在床上盯著天花板，這時候你的感受是什麼？",
     "options": [
       { "label": "A", "text": "腦袋空空的，暫時不想思考。", "style": "Chill / Soft", "features": { "valence": 0.42, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.92 } },
-      { "label": "B", "text": "現在只想大哭一場，好難過。", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.18, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.88 } },
-      { "label": "C", "text": "沒事啦，我一個人也可以很好。", "style": "Romantic / Sweet", "features": { "valence": 0.62, "energy": 0.28, "danceability": 0.40, "tempo": 0.38, "acousticness": 0.70 } },
+      { "label": "B", "text": "現在只想大哭一場，好難過。", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.18, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.58 } },
+      { "label": "C", "text": "沒事啦，我一個人也可以很好。", "style": "Romantic / Sweet", "features": { "valence": 0.62, "energy": 0.52, "danceability": 0.48, "tempo": 0.55, "acousticness": 0.38 } },
       { "label": "D", "text": "真的很煩，想到他就一肚子火。", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.68, "danceability": 0.38, "tempo": 0.58, "acousticness": 0.18 } },
       { "label": "E", "text": "哭完就沒事了，我要往前走。", "style": "Happy / Bright", "features": { "valence": 0.80, "energy": 0.75, "danceability": 0.68, "tempo": 0.70, "acousticness": 0.12 } }
     ]
@@ -37,9 +37,9 @@
     "text": "下午走在路上，天空突然下起大雨，你沒有帶傘，第一反應是？",
     "options": [
       { "label": "A", "text": "直接衝進雨裡跑，其實蠻爽的。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.92, "danceability": 0.85, "tempo": 0.85, "acousticness": 0.08 } },
-      { "label": "B", "text": "看著雨發呆，感覺心也濕了。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.22, "danceability": 0.20, "tempo": 0.25, "acousticness": 0.82 } },
+      { "label": "B", "text": "看著雨發呆，感覺心也濕了。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.22, "danceability": 0.20, "tempo": 0.25, "acousticness": 0.55 } },
       { "label": "C", "text": "反正都濕了，那就慢慢走吧。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.28, "danceability": 0.32, "tempo": 0.30, "acousticness": 0.72 } },
-      { "label": "D", "text": "好想現在有人能來接我回家。", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.32, "danceability": 0.42, "tempo": 0.40, "acousticness": 0.68 } },
+      { "label": "D", "text": "好想現在有人能來接我回家。", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.55, "danceability": 0.50, "tempo": 0.58, "acousticness": 0.38 } },
       { "label": "E", "text": "快速跑過街，討厭這種狼狽感。", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.75, "danceability": 0.42, "tempo": 0.65, "acousticness": 0.15 } }
     ]
   },
@@ -48,8 +48,8 @@
     "text": "你正在健身房做最後一組訓練，快撐不住了，這時候你的感受是？",
     "options": [
       { "label": "A", "text": "我只聽得到呼吸，腦袋空空的。", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.28, "danceability": 0.30, "tempo": 0.32, "acousticness": 0.75 } },
-      { "label": "B", "text": "肌肉痛死了，心情變得好差。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.38, "danceability": 0.35, "tempo": 0.40, "acousticness": 0.55 } },
-      { "label": "C", "text": "想著那個人，我一定要撐下去。", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.50, "danceability": 0.60, "tempo": 0.52, "acousticness": 0.45 } },
+      { "label": "B", "text": "肌肉痛死了，心情變得好差。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.38, "danceability": 0.35, "tempo": 0.40, "acousticness": 0.42 } },
+      { "label": "C", "text": "想著那個人，我一定要撐下去。", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.62, "danceability": 0.65, "tempo": 0.62, "acousticness": 0.30 } },
       { "label": "D", "text": "現在一肚子火，用憤怒硬扛。", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.95, "danceability": 0.52, "tempo": 0.88, "acousticness": 0.05 } },
       { "label": "E", "text": "撐過超爽！我就喜歡挑戰極限。", "style": "Happy / Bright", "features": { "valence": 0.78, "energy": 0.92, "danceability": 0.88, "tempo": 0.85, "acousticness": 0.05 } }
     ]
@@ -61,16 +61,16 @@
       { "label": "A", "text": "戴上耳機，想像自己人間蒸發。", "style": "Chill / Soft", "features": { "valence": 0.42, "energy": 0.15, "danceability": 0.22, "tempo": 0.20, "acousticness": 0.88 } },
       { "label": "B", "text": "猛灌黑咖啡，讓心跳叫醒自己。", "style": "Dark / Moody", "features": { "valence": 0.22, "energy": 0.72, "danceability": 0.35, "tempo": 0.62, "acousticness": 0.20 } },
       { "label": "C", "text": "在想下班要去哪嗨，好興奮。", "style": "Happy / Bright", "features": { "valence": 0.82, "energy": 0.75, "danceability": 0.70, "tempo": 0.68, "acousticness": 0.15 } },
-      { "label": "D", "text": "盯著窗外，覺得整個人好無力。", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.78 } },
-      { "label": "E", "text": "滑個貓咪影片，心裡暖暖的。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.35, "danceability": 0.45, "tempo": 0.42, "acousticness": 0.62 } }
+      { "label": "D", "text": "盯著窗外，覺得整個人好無力。", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.52 } },
+      { "label": "E", "text": "滑個貓咪影片，心裡暖暖的。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.58, "danceability": 0.55, "tempo": 0.58, "acousticness": 0.38 } }
     ]
   },
   {
     "id": 7,
     "text": "你剛看完一部讓你久久無法回神的電影，走出電影院的那一刻，你最想做什麼？",
     "options": [
-      { "label": "A", "text": "我想一個人走走，誰都別說話。", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.85 } },
-      { "label": "B", "text": "好想立刻告訴他：我很想你。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.38, "danceability": 0.44, "tempo": 0.42, "acousticness": 0.65 } },
+      { "label": "A", "text": "我想一個人走走，誰都別說話。", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.55 } },
+      { "label": "B", "text": "好想立刻告訴他：我很想你。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.58, "danceability": 0.52, "tempo": 0.58, "acousticness": 0.38 } },
       { "label": "C", "text": "心裡好堵，那一段真的好難受。", "style": "Dark / Moody", "features": { "valence": 0.10, "energy": 0.55, "danceability": 0.28, "tempo": 0.50, "acousticness": 0.28 } },
       { "label": "D", "text": "太精采了！想趕快找人聊聊。", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.85, "danceability": 0.78, "tempo": 0.78, "acousticness": 0.10 } },
       { "label": "E", "text": "去逛逛生活百貨，回歸現實。", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.25, "danceability": 0.30, "tempo": 0.32, "acousticness": 0.75 } }
@@ -82,8 +82,8 @@
     "options": [
       { "label": "A", "text": "選窗邊的位置，靜靜看著路人。", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.20, "danceability": 0.28, "tempo": 0.28, "acousticness": 0.80 } },
       { "label": "B", "text": "坐大桌子啊，感受大家的熱鬧。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.80, "danceability": 0.75, "tempo": 0.70, "acousticness": 0.12 } },
-      { "label": "C", "text": "那個有燈的沙發座，好溫柔喔。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.35, "danceability": 0.42, "tempo": 0.38, "acousticness": 0.70 } },
-      { "label": "D", "text": "最陰暗的角落，比較有安全感。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.18, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.88 } },
+      { "label": "C", "text": "那個有燈的沙發座，好溫柔喔。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.55, "danceability": 0.50, "tempo": 0.55, "acousticness": 0.38 } },
+      { "label": "D", "text": "最陰暗的角落，比較有安全感。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.18, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.55 } },
       { "label": "E", "text": "坐在吧台，冷靜觀察店員忙碌。", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.52, "danceability": 0.30, "tempo": 0.52, "acousticness": 0.32 } }
     ]
   },
@@ -91,8 +91,8 @@
     "id": 10,
     "text": "遇到一隻縮在角落的流浪貓抬頭看你，你當下的反應是？",
     "options": [
-      { "label": "A", "text": "我會蹲下來，輕聲跟牠說哈囉。", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.28, "danceability": 0.38, "tempo": 0.35, "acousticness": 0.78 } },
-      { "label": "B", "text": "心突然揪一下，牠看起來好慘。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.15, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.82 } },
+      { "label": "A", "text": "我會蹲下來，輕聲跟牠說哈囉。", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.52, "danceability": 0.48, "tempo": 0.55, "acousticness": 0.40 } },
+      { "label": "B", "text": "心突然揪一下，牠看起來好慘。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.15, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.52 } },
       { "label": "C", "text": "看一眼就走，不打擾也是溫柔。", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.25, "danceability": 0.30, "tempo": 0.30, "acousticness": 0.75 } },
       { "label": "D", "text": "這不行！馬上去買罐頭餵牠。", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.72, "danceability": 0.68, "tempo": 0.65, "acousticness": 0.18 } },
       { "label": "E", "text": "跟牠對視，感覺我們很像。", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.58, "danceability": 0.28, "tempo": 0.55, "acousticness": 0.25 } }
@@ -103,8 +103,8 @@
     "text": "一個人在家煮飯，廚房裡飄著香味，你最享受哪個瞬間？",
     "options": [
       { "label": "A", "text": "切菜的聲音很療癒，超級舒壓。", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.22, "danceability": 0.40, "tempo": 0.30, "acousticness": 0.78 } },
-      { "label": "B", "text": "看著熱氣發呆，突然有點遺憾。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.25, "danceability": 0.30, "tempo": 0.35, "acousticness": 0.72 } },
-      { "label": "C", "text": "現在有人能一起吃，該多幸福。", "style": "Romantic / Sweet", "features": { "valence": 0.78, "energy": 0.48, "danceability": 0.62, "tempo": 0.55, "acousticness": 0.42 } },
+      { "label": "B", "text": "看著熱氣發呆，突然有點遺憾。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.25, "danceability": 0.30, "tempo": 0.35, "acousticness": 0.48 } },
+      { "label": "C", "text": "現在有人能一起吃，該多幸福。", "style": "Romantic / Sweet", "features": { "valence": 0.78, "energy": 0.62, "danceability": 0.65, "tempo": 0.62, "acousticness": 0.28 } },
       { "label": "D", "text": "精準調味，喜歡掌控全局的感覺。", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.55, "danceability": 0.42, "tempo": 0.52, "acousticness": 0.20 } },
       { "label": "E", "text": "開最大聲聽歌跳舞，廚房我包了。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.80, "danceability": 0.82, "tempo": 0.75, "acousticness": 0.12 } }
     ]
@@ -114,8 +114,8 @@
     "text": "窗外一陣風吹進來，你閉上眼睛，腦子裡出現的第一個畫面是？",
     "options": [
       { "label": "A", "text": "一片空白，只覺得風吹得很爽。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.18, "danceability": 0.25, "tempo": 0.25, "acousticness": 0.85 } },
-      { "label": "B", "text": "想起跟他一起看海的那個下午。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.32, "danceability": 0.42, "tempo": 0.38, "acousticness": 0.72 } },
-      { "label": "C", "text": "風好涼，心裡感覺空空的。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.22, "danceability": 0.20, "tempo": 0.28, "acousticness": 0.78 } },
+      { "label": "B", "text": "想起跟他一起看海的那個下午。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.55, "danceability": 0.50, "tempo": 0.58, "acousticness": 0.38 } },
+      { "label": "C", "text": "風好涼，心裡感覺空空的。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.22, "danceability": 0.20, "tempo": 0.28, "acousticness": 0.52 } },
       { "label": "D", "text": "我想現在就出發，去哪都好。", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.80, "danceability": 0.75, "tempo": 0.75, "acousticness": 0.10 } },
       { "label": "E", "text": "有種說不出的預感，既怕又期待。", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.65, "danceability": 0.32, "tempo": 0.58, "acousticness": 0.22 } }
     ]
@@ -125,8 +125,8 @@
     "text": "收到一個超大的好消息，你當下的第一個反應是？",
     "options": [
       { "label": "A", "text": "先深呼吸，安靜享受這份喜悅。", "style": "Chill / Soft", "features": { "valence": 0.60, "energy": 0.28, "danceability": 0.45, "tempo": 0.38, "acousticness": 0.72 } },
-      { "label": "B", "text": "眼眶都熱了，終於熬過來了。", "style": "Sad / Emotional", "features": { "valence": 0.30, "energy": 0.32, "danceability": 0.35, "tempo": 0.40, "acousticness": 0.65 } },
-      { "label": "C", "text": "一定要第一個打給「那個人」。", "style": "Romantic / Sweet", "features": { "valence": 0.80, "energy": 0.50, "danceability": 0.60, "tempo": 0.52, "acousticness": 0.50 } },
+      { "label": "B", "text": "眼眶都熱了，終於熬過來了。", "style": "Sad / Emotional", "features": { "valence": 0.30, "energy": 0.32, "danceability": 0.35, "tempo": 0.40, "acousticness": 0.45 } },
+      { "label": "C", "text": "一定要第一個打給「那個人」。", "style": "Romantic / Sweet", "features": { "valence": 0.80, "energy": 0.62, "danceability": 0.65, "tempo": 0.62, "acousticness": 0.32 } },
       { "label": "D", "text": "心裡爽翻天，但外表還是很酷。", "style": "Dark / Moody", "features": { "valence": 0.28, "energy": 0.75, "danceability": 0.62, "tempo": 0.68, "acousticness": 0.10 } },
       { "label": "E", "text": "好想衝出門慶祝，大聲尖叫。", "style": "Happy / Bright", "features": { "valence": 0.95, "energy": 0.95, "danceability": 0.92, "tempo": 0.88, "acousticness": 0.05 } }
     ]
@@ -136,10 +136,10 @@
     "text": "精心打扮好準備出門，朋友卻突然放鳥，你第一時間會？",
     "options": [
       { "label": "A", "text": "既然穿這麼漂亮，自己逛也行。", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.82, "danceability": 0.78, "tempo": 0.75, "acousticness": 0.12 } },
-      { "label": "B", "text": "心情瞬間盪到底，只想躲回房間。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.18, "danceability": 0.22, "tempo": 0.22, "acousticness": 0.80 } },
+      { "label": "B", "text": "心情瞬間盪到底，只想躲回房間。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.18, "danceability": 0.22, "tempo": 0.22, "acousticness": 0.52 } },
       { "label": "C", "text": "直接已讀不回，心裡真的很火。", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.55, "danceability": 0.30, "tempo": 0.52, "acousticness": 0.28 } },
       { "label": "D", "text": "其實鬆了一口氣，宅在家萬歲。", "style": "Chill / Soft", "features": { "valence": 0.52, "energy": 0.22, "danceability": 0.28, "tempo": 0.28, "acousticness": 0.85 } },
-      { "label": "E", "text": "翻舊照片，懷念以前的好默契。", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.30, "danceability": 0.38, "tempo": 0.38, "acousticness": 0.70 } }
+      { "label": "E", "text": "翻舊照片，懷念以前的好默契。", "style": "Romantic / Sweet", "features": { "valence": 0.65, "energy": 0.55, "danceability": 0.48, "tempo": 0.58, "acousticness": 0.38 } }
     ]
   },
   {
@@ -147,8 +147,8 @@
     "text": "坐火車看著風景發呆，你最喜歡這種時刻的什麼感覺？",
     "options": [
       { "label": "A", "text": "腦袋空空，感覺時間都停了。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.18, "danceability": 0.25, "tempo": 0.25, "acousticness": 0.88 } },
-      { "label": "B", "text": "感嘆時間好快，心情有點惆悵。", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.28, "danceability": 0.32, "tempo": 0.35, "acousticness": 0.70 } },
-      { "label": "C", "text": "快見到想見的人了，心裡甜甜的。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.42, "danceability": 0.55, "tempo": 0.48, "acousticness": 0.58 } },
+      { "label": "B", "text": "感嘆時間好快，心情有點惆悵。", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.28, "danceability": 0.32, "tempo": 0.35, "acousticness": 0.45 } },
+      { "label": "C", "text": "快見到想見的人了，心裡甜甜的。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.60, "danceability": 0.60, "tempo": 0.60, "acousticness": 0.35 } },
       { "label": "D", "text": "戴著耳機冷眼看窗外，很自在。", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.60, "danceability": 0.38, "tempo": 0.55, "acousticness": 0.22 } },
       { "label": "E", "text": "電力回滿！等不及要開始冒險。", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.75, "danceability": 0.72, "tempo": 0.70, "acousticness": 0.18 } }
     ]
@@ -158,8 +158,8 @@
     "text": "第一次見到心動對象，你第一個身體反應是？",
     "options": [
       { "label": "A", "text": "我會裝淡定，別讓他看出心跳。", "style": "Chill / Soft", "features": { "valence": 0.55, "energy": 0.25, "danceability": 0.38, "tempo": 0.32, "acousticness": 0.80 } },
-      { "label": "B", "text": "會想逃走，甜甜的但好不知所措。", "style": "Sad / Emotional", "features": { "valence": 0.25, "energy": 0.28, "danceability": 0.30, "tempo": 0.35, "acousticness": 0.72 } },
-      { "label": "C", "text": "腦袋都是粉紅泡泡，像演偶像劇。", "style": "Romantic / Sweet", "features": { "valence": 0.82, "energy": 0.45, "danceability": 0.60, "tempo": 0.50, "acousticness": 0.55 } },
+      { "label": "B", "text": "會想逃走，甜甜的但好不知所措。", "style": "Sad / Emotional", "features": { "valence": 0.25, "energy": 0.28, "danceability": 0.30, "tempo": 0.35, "acousticness": 0.48 } },
+      { "label": "C", "text": "腦袋都是粉紅泡泡，像演偶像劇。", "style": "Romantic / Sweet", "features": { "valence": 0.82, "energy": 0.62, "danceability": 0.65, "tempo": 0.62, "acousticness": 0.32 } },
       { "label": "D", "text": "目光被鎖定，感覺被命運擊中。", "style": "Dark / Moody", "features": { "valence": 0.22, "energy": 0.65, "danceability": 0.42, "tempo": 0.60, "acousticness": 0.18 } },
       { "label": "E", "text": "就是一直笑，覺得今天好開心。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.80, "danceability": 0.78, "tempo": 0.75, "acousticness": 0.12 } }
     ]
@@ -168,8 +168,8 @@
     "id": 18,
     "text": "滑手機看到三年前的舊照片，你會覺得？",
     "options": [
-      { "label": "A", "text": "心裡酸酸的，那時真的好傻。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.80 } },
-      { "label": "B", "text": "好懷念喔，那時的一切都好美。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.28, "danceability": 0.40, "tempo": 0.38, "acousticness": 0.72 } },
+      { "label": "A", "text": "心裡酸酸的，那時真的好傻。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.52 } },
+      { "label": "B", "text": "好懷念喔，那時的一切都好美。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.55, "danceability": 0.48, "tempo": 0.58, "acousticness": 0.38 } },
       { "label": "C", "text": "覺得很陌生，我真的變很多。", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.50, "danceability": 0.28, "tempo": 0.48, "acousticness": 0.32 } },
       { "label": "D", "text": "沒什麼感覺，就只是一段紀錄。", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.18, "danceability": 0.25, "tempo": 0.22, "acousticness": 0.88 } },
       { "label": "E", "text": "這也太醜了吧！趕快找黑歷史。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.75, "danceability": 0.70, "tempo": 0.68, "acousticness": 0.15 } }
@@ -180,8 +180,8 @@
     "text": "在公園看夕陽慢慢落山，你心裡想的是？",
     "options": [
       { "label": "A", "text": "什麼都不想，安靜看著天黑。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.15, "danceability": 0.22, "tempo": 0.20, "acousticness": 0.90 } },
-      { "label": "B", "text": "夕陽好美，可是美得讓人寂寞。", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.22, "danceability": 0.28, "tempo": 0.30, "acousticness": 0.80 } },
-      { "label": "C", "text": "覺得今天很努力，心裡很知足。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.35, "danceability": 0.45, "tempo": 0.40, "acousticness": 0.65 } },
+      { "label": "B", "text": "夕陽好美，可是美得讓人寂寞。", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.22, "danceability": 0.28, "tempo": 0.30, "acousticness": 0.52 } },
+      { "label": "C", "text": "覺得今天很努力，心裡很知足。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.58, "danceability": 0.52, "tempo": 0.60, "acousticness": 0.38 } },
       { "label": "D", "text": "不想回家，對時間流逝感到無力。", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.50, "danceability": 0.38, "tempo": 0.48, "acousticness": 0.20 } },
       { "label": "E", "text": "晚霞好正！等一下要吃什麼？", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.65, "danceability": 0.68, "tempo": 0.62, "acousticness": 0.30 } }
     ]
@@ -191,8 +191,8 @@
     "text": "面試前最後 5 分鐘，你在門口等待時最需要什麼？",
     "options": [
       { "label": "A", "text": "狂喝水深呼吸，拜託別發抖。", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.92 } },
-      { "label": "B", "text": "隨便啦，沒上就是命中注定。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.85 } },
-      { "label": "C", "text": "想著成功的畫面，我可以的！", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.38, "danceability": 0.50, "tempo": 0.45, "acousticness": 0.60 } },
+      { "label": "B", "text": "隨便啦，沒上就是命中注定。", "style": "Sad / Emotional", "features": { "valence": 0.20, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.55 } },
+      { "label": "C", "text": "想著成功的畫面，我可以的！", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.58, "danceability": 0.55, "tempo": 0.60, "acousticness": 0.35 } },
       { "label": "D", "text": "眼神要犀利，進去殺個片甲不留。", "style": "Dark / Moody", "features": { "valence": 0.22, "energy": 0.70, "danceability": 0.55, "tempo": 0.65, "acousticness": 0.12 } },
       { "label": "E", "text": "現在充滿鬥志，只想趕快開始。", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.88, "danceability": 0.78, "tempo": 0.82, "acousticness": 0.08 } }
     ]
@@ -201,9 +201,9 @@
     "id": 21,
     "text": "凌晨三點睡不著望著天花板，你最想要什麼感覺？",
     "options": [
-      { "label": "A", "text": "身心都很放鬆，靜靜享受這份平靜", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.88 } },
+      { "label": "A", "text": "身心都很放鬆，靜靜享受這份平靜", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.55 } },
       { "label": "B", "text": "心情非常焦躁，被負面情緒包圍", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.45, "danceability": 0.25, "tempo": 0.45, "acousticness": 0.35 } },
-      { "label": "C", "text": "想抱著被子，感覺有人陪我。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.22, "danceability": 0.35, "tempo": 0.32, "acousticness": 0.80 } },
+      { "label": "C", "text": "想抱著被子，感覺有人陪我。", "style": "Romantic / Sweet", "features": { "valence": 0.70, "energy": 0.50, "danceability": 0.45, "tempo": 0.55, "acousticness": 0.42 } },
       { "label": "D", "text": "身心都很放鬆，靜靜享受這份平靜。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.12, "danceability": 0.20, "tempo": 0.20, "acousticness": 0.92 } },
       { "label": "E", "text": "乾脆起來打電動，瘋狂到天亮。", "style": "Happy / Bright", "features": { "valence": 0.80, "energy": 0.78, "danceability": 0.72, "tempo": 0.72, "acousticness": 0.15 } }
     ]
@@ -214,8 +214,8 @@
     "options": [
       { "label": "A", "text": "慢慢走，那個碎裂聲超療癒。", "style": "Chill / Soft", "features": { "valence": 0.48, "energy": 0.18, "danceability": 0.25, "tempo": 0.22, "acousticness": 0.85 } },
       { "label": "B", "text": "專踩葉子多的地方，超好玩的。", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.75, "danceability": 0.80, "tempo": 0.72, "acousticness": 0.15 } },
-      { "label": "C", "text": "看著枯葉，覺得這季節好寂寞。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.78 } },
-      { "label": "D", "text": "選一片最漂亮的，送給心上人。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.30, "danceability": 0.40, "tempo": 0.38, "acousticness": 0.68 } },
+      { "label": "C", "text": "看著枯葉，覺得這季節好寂寞。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.20, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.50 } },
+      { "label": "D", "text": "選一片最漂亮的，送給心上人。", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.55, "danceability": 0.48, "tempo": 0.58, "acousticness": 0.38 } },
       { "label": "E", "text": "用力踩爛，發洩一下心裡的火。", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.58, "danceability": 0.30, "tempo": 0.55, "acousticness": 0.28 } }
     ]
   },
@@ -226,8 +226,8 @@
       { "label": "A", "text": "水關了趕快衝出去，手機在哪？", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.88, "danceability": 0.78, "tempo": 0.85, "acousticness": 0.10 } },
       { "label": "B", "text": "在浴室繼續想，把它想完整。", "style": "Dark / Moody", "features": { "valence": 0.18, "energy": 0.62, "danceability": 0.32, "tempo": 0.58, "acousticness": 0.22 } },
       { "label": "C", "text": "隨便啦，先洗完，忘了就算了。", "style": "Chill / Soft", "features": { "valence": 0.52, "energy": 0.20, "danceability": 0.28, "tempo": 0.28, "acousticness": 0.82 } },
-      { "label": "D", "text": "有點難過，總算把真心話寫出來了。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.28, "danceability": 0.20, "tempo": 0.32, "acousticness": 0.75 } },
-      { "label": "E", "text": "想到跟他有關的事，偷笑了一下。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.35, "danceability": 0.44, "tempo": 0.42, "acousticness": 0.65 } }
+      { "label": "D", "text": "有點難過，總算把真心話寫出來了。", "style": "Sad / Emotional", "features": { "valence": 0.12, "energy": 0.28, "danceability": 0.20, "tempo": 0.32, "acousticness": 0.50 } },
+      { "label": "E", "text": "想到跟他有關的事，偷笑了一下。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.58, "danceability": 0.52, "tempo": 0.60, "acousticness": 0.38 } }
     ]
   },
   {
@@ -235,8 +235,8 @@
     "text": "跟很久不見的好友在居酒屋聊一晚，氣氛通常是？",
     "options": [
       { "label": "A", "text": "超放鬆，不說話也不會尷尬。", "style": "Chill / Soft", "features": { "valence": 0.58, "energy": 0.28, "danceability": 0.45, "tempo": 0.38, "acousticness": 0.75 } },
-      { "label": "B", "text": "感慨大家變好多，真的老了。", "style": "Sad / Emotional", "features": { "valence": 0.28, "energy": 0.30, "danceability": 0.38, "tempo": 0.38, "acousticness": 0.70 } },
-      { "label": "C", "text": "心裡暖暖的，幸好這份情還在。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.48, "danceability": 0.58, "tempo": 0.52, "acousticness": 0.50 } },
+      { "label": "B", "text": "感慨大家變好多，真的老了。", "style": "Sad / Emotional", "features": { "valence": 0.28, "energy": 0.30, "danceability": 0.38, "tempo": 0.38, "acousticness": 0.45 } },
+      { "label": "C", "text": "心裡暖暖的，幸好這份情還在。", "style": "Romantic / Sweet", "features": { "valence": 0.75, "energy": 0.62, "danceability": 0.62, "tempo": 0.62, "acousticness": 0.30 } },
       { "label": "D", "text": "喝了酒，開始說平常不敢說的。", "style": "Dark / Moody", "features": { "valence": 0.25, "energy": 0.62, "danceability": 0.48, "tempo": 0.58, "acousticness": 0.18 } },
       { "label": "E", "text": "笑到快斷氣，壓力全部都飛了。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.82, "danceability": 0.80, "tempo": 0.78, "acousticness": 0.12 } }
     ]
@@ -247,9 +247,9 @@
     "options": [
       { "label": "A", "text": "太有趣了！隨便亂走看有啥。", "style": "Happy / Bright", "features": { "valence": 0.90, "energy": 0.85, "danceability": 0.82, "tempo": 0.80, "acousticness": 0.10 } },
       { "label": "B", "text": "先找個安靜的地方開導航。", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.22, "danceability": 0.28, "tempo": 0.28, "acousticness": 0.80 } },
-      { "label": "C", "text": "看著人群，突然覺得好孤單。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.22, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.72 } },
+      { "label": "C", "text": "看著人群，突然覺得好孤單。", "style": "Sad / Emotional", "features": { "valence": 0.15, "energy": 0.22, "danceability": 0.22, "tempo": 0.28, "acousticness": 0.48 } },
       { "label": "D", "text": "故意往暗巷鑽，想來點冒險。", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.65, "danceability": 0.35, "tempo": 0.60, "acousticness": 0.22 } },
-      { "label": "E", "text": "先吃雞排再說，路等等再找。", "style": "Romantic / Sweet", "features": { "valence": 0.78, "energy": 0.40, "danceability": 0.48, "tempo": 0.45, "acousticness": 0.60 } }
+      { "label": "E", "text": "先吃雞排再說，路等等再找。", "style": "Romantic / Sweet", "features": { "valence": 0.78, "energy": 0.60, "danceability": 0.55, "tempo": 0.60, "acousticness": 0.35 } }
     ]
   }
 ]

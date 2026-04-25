@@ -4,9 +4,9 @@
     "text": "週五深夜，窗外細雨綿綿，你一個人坐在房間裡，這時最想聽什麼？",
     "options": [
       { "label": "A", "text": "輕柔鋼琴曲，讓心慢慢沉靜", "style": "Chill / Soft", "features": { "valence": 0.45, "energy": 0.22, "danceability": 0.28, "tempo": 0.30, "acousticness": 0.85 } },
-      { "label": "B", "text": "帶點憂傷的吉他民謠，說著離別", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.25, "danceability": 0.30, "tempo": 0.32, "acousticness": 0.78 } },
+      { "label": "B", "text": "帶點憂傷的吉他民謠，唱著離別", "style": "Sad / Emotional", "features": { "valence": 0.18, "energy": 0.25, "danceability": 0.30, "tempo": 0.32, "acousticness": 0.78 } },
       { "label": "C", "text": "甜蜜的情歌，讓人想起某個人", "style": "Romantic / Sweet", "features": { "valence": 0.68, "energy": 0.35, "danceability": 0.45, "tempo": 0.42, "acousticness": 0.62 } },
-      { "label": "D", "text": "黑暗電子樂，沉浸在孤獨感中", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.60, "danceability": 0.50, "tempo": 0.55, "acousticness": 0.12 } },
+      { "label": "D", "text": "EDM電子樂，沉浸在孤獨感中", "style": "Dark / Moody", "features": { "valence": 0.15, "energy": 0.60, "danceability": 0.50, "tempo": 0.55, "acousticness": 0.12 } },
       { "label": "E", "text": "活潑的流行樂，趕走陰鬱情緒", "style": "Happy / Bright", "features": { "valence": 0.85, "energy": 0.78, "danceability": 0.72, "tempo": 0.68, "acousticness": 0.15 } }
     ]
   },
@@ -15,10 +15,10 @@
     "text": "早晨通勤路上，你戴上耳機走出家門，這時你的播放清單是？",
     "options": [
       { "label": "A", "text": "輕音樂，邊走邊發呆放空", "style": "Chill / Soft", "features": { "valence": 0.50, "energy": 0.20, "danceability": 0.32, "tempo": 0.28, "acousticness": 0.80 } },
-      { "label": "B", "text": "帶著哀愁的老歌，讓思緒飄遠", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.30, "danceability": 0.28, "tempo": 0.35, "acousticness": 0.72 } },
+      { "label": "B", "text": "帶著哀愁的老歌，沉浸在自己的情緒中", "style": "Sad / Emotional", "features": { "valence": 0.22, "energy": 0.30, "danceability": 0.28, "tempo": 0.35, "acousticness": 0.72 } },
       { "label": "C", "text": "浪漫流行，讓人心情愉悅地出門", "style": "Romantic / Sweet", "features": { "valence": 0.72, "energy": 0.42, "danceability": 0.55, "tempo": 0.48, "acousticness": 0.58 } },
-      { "label": "D", "text": "黑暗搖滾，整個人進入戰鬥模式", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.72, "danceability": 0.45, "tempo": 0.62, "acousticness": 0.10 } },
-      { "label": "E", "text": "充滿活力的 Upbeat 歌，精神百倍", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.85, "danceability": 0.80, "tempo": 0.75, "acousticness": 0.08 } }
+      { "label": "D", "text": "搖滾進入戰鬥模式", "style": "Dark / Moody", "features": { "valence": 0.20, "energy": 0.72, "danceability": 0.45, "tempo": 0.62, "acousticness": 0.10 } },
+      { "label": "E", "text": "充滿活力的歌，精神百倍", "style": "Happy / Bright", "features": { "valence": 0.88, "energy": 0.85, "danceability": 0.80, "tempo": 0.75, "acousticness": 0.08 } }
     ]
   },
   {
@@ -28,7 +28,7 @@
       { "label": "A", "text": "安靜的環境音樂，什麼都不想思考", "style": "Chill / Soft", "features": { "valence": 0.42, "energy": 0.15, "danceability": 0.20, "tempo": 0.22, "acousticness": 0.92 } },
       { "label": "B", "text": "哭泣系情歌，讓眼淚盡情流出來", "style": "Sad / Emotional", "features": { "valence": 0.10, "energy": 0.18, "danceability": 0.22, "tempo": 0.25, "acousticness": 0.88 } },
       { "label": "C", "text": "甜蜜的歌，假裝一切都還好", "style": "Romantic / Sweet", "features": { "valence": 0.62, "energy": 0.28, "danceability": 0.40, "tempo": 0.38, "acousticness": 0.70 } },
-      { "label": "D", "text": "陰鬱搖滾，讓憤怒代替傷心", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.68, "danceability": 0.38, "tempo": 0.58, "acousticness": 0.18 } },
+      { "label": "D", "text": "搖滾 讓憤怒代替傷心", "style": "Dark / Moody", "features": { "valence": 0.12, "energy": 0.68, "danceability": 0.38, "tempo": 0.58, "acousticness": 0.18 } },
       { "label": "E", "text": "振奮人心的歌，告訴自己要振作", "style": "Happy / Bright", "features": { "valence": 0.80, "energy": 0.75, "danceability": 0.68, "tempo": 0.70, "acousticness": 0.12 } }
     ]
   },
