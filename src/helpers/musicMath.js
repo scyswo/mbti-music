@@ -102,14 +102,21 @@ export function calculateStyleWeights(answers) {
 
 export function getTopSimilarSongs(userVector, songs, n = 3) {
   if (!songs || songs.length === 0) return [];
-  return songs
+  const ranked = songs
     .filter(s => s && FEATURE_KEYS.some(k => s[k] !== undefined && s[k] !== null))
     .map(song => ({
       ...song,
       similarity: cosineSimilarity(userVector, normalizeFeatures(song)),
     }))
-    .sort((a, b) => b.similarity - a.similarity)
-    .slice(0, n);
+    .sort((a, b) => b.similarity - a.similarity);
+
+  // 從相似度最高的前 10 首隨機抽 n 首，保留相關性又有多樣性
+  const pool = ranked.slice(0, Math.max(n, 10));
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, n);
 }
 
 // ─── Spotify CSV 解析器（瀏覽器端）───────────────────────
