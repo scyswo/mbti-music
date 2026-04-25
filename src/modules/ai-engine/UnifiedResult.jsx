@@ -54,6 +54,7 @@ export default function V2Result() {
   const [copyMsg, setCopyMsg]       = useState('');
   const [msgText, setMsgText]       = useState('');
   const [msgStatus, setMsgStatus]   = useState('idle'); // 'idle' | 'sending' | 'sent' | 'error'
+  const [previewDataUrl, setPreviewDataUrl] = useState(null);
   const shareCardRef = useRef(null);
   const initCalledRef = useRef(false);
 
@@ -94,13 +95,27 @@ export default function V2Result() {
   const handleDownloadJpg = async () => {
     if (!shareCardRef.current) return;
     try {
+      const overlay = document.createElement('div');
+      overlay.style.cssText = 'position:fixed;inset:0;background:#fff;z-index:9998;pointer-events:none;';
+      document.body.appendChild(overlay);
+      shareCardRef.current.style.left = '0px';
+      shareCardRef.current.style.zIndex = '9999';
       const canvas = await html2canvas(shareCardRef.current, {
         backgroundColor: '#f8f4f0', scale: 2, useCORS: true, logging: false,
       });
-      const link = document.createElement('a');
-      link.download = `mbti-music-${mbti || 'result'}.jpg`;
-      link.href = canvas.toDataURL('image/jpeg', 0.92);
-      link.click();
+      shareCardRef.current.style.left = '-9999px';
+      shareCardRef.current.style.zIndex = '';
+      document.body.removeChild(overlay);
+      const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
+      setPreviewDataUrl(dataUrl);
+      try {
+        const link = document.createElement('a');
+        link.download = `mbti-music-${mbti || 'result'}.jpg`;
+        link.href = dataUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch { /* 桌面下載失敗時使用者可長按儲存 */ }
     } catch { alert('截圖失敗，請嘗試長按畫面儲存圖片'); }
   };
 
@@ -123,6 +138,34 @@ export default function V2Result() {
 
   return (
     <div className="page-top">
+
+      {/* 截圖預覽 Modal（IG/LINE 等 in-app 瀏覽器長按儲存） */}
+      {previewDataUrl && (
+        <div onClick={() => setPreviewDataUrl(null)} style={{
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.88)',
+          zIndex: 10000, display: 'flex', flexDirection: 'column',
+          alignItems: 'center', justifyContent: 'center', gap: 16, padding: 20,
+        }}>
+          <img src={previewDataUrl} alt="截圖預覽"
+            onClick={e => e.stopPropagation()}
+            style={{ maxWidth: '100%', maxHeight: '65vh', borderRadius: 12, boxShadow: '0 4px 32px rgba(0,0,0,0.4)' }} />
+          <p style={{ color: '#fff', fontSize: 13, textAlign: 'center', lineHeight: 1.6, margin: 0 }}>
+            📱 <b>長按圖片</b>即可儲存到相簿<br />
+            <span style={{ opacity: 0.7 }}>（IG、LINE 等 App 內需長按儲存）</span>
+          </p>
+          <div style={{ display: 'flex', gap: 12 }}>
+            <a href={previewDataUrl} download={`mbti-music-${mbti || 'result'}.jpg`}
+              onClick={e => e.stopPropagation()}
+              style={{ padding: '10px 22px', background: '#fff', borderRadius: 8, color: '#333', fontWeight: 700, textDecoration: 'none', fontSize: 14 }}>
+              💾 下載
+            </a>
+            <button onClick={() => setPreviewDataUrl(null)} style={{
+              padding: '10px 22px', background: 'transparent', border: '1.5px solid rgba(255,255,255,0.6)',
+              borderRadius: 8, color: '#fff', cursor: 'pointer', fontSize: 14,
+            }}>✕ 關閉</button>
+          </div>
+        </div>
+      )}
 
       {/* AI 生成標籤 */}
       {isAiGenerated && (
@@ -369,7 +412,7 @@ export default function V2Result() {
               value={msgText}
               onChange={e => setMsgText(e.target.value)}
               maxLength={150}
-              placeholder="任何想說的話都可以留下來 :)"
+              placeholder="任何想說的話都可以留下來!"
               style={{
                 width: '100%', boxSizing: 'border-box',
                 minHeight: '80px', resize: 'none',
