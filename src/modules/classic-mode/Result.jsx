@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
+import { QRCodeSVG } from 'qrcode.react';
 import { orchestrator } from '../../agents/orchestrator';
 
 // ── 16 種 MBTI 聽歌人格描述 ──────────────────────────────────
@@ -463,8 +464,12 @@ function Result() {
             </div>
           )}
 
-          <div style={{ textAlign: 'center', fontSize: '10px', color: 'rgba(150,170,190,0.7)', letterSpacing: '0.5px' }}>
-            mbti-music.vercel.app
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+            <QRCodeSVG value="https://mbti-music-1.vercel.app/" size={48} bgColor="transparent" fgColor="rgba(150,170,190,0.8)" />
+            <div>
+              <div style={{ fontSize: '10px', color: 'rgba(150,170,190,0.9)', fontWeight: '700' }}>掃碼測你的音樂人格</div>
+              <div style={{ fontSize: '10px', color: 'rgba(150,170,190,0.6)' }}>mbti-music-1.vercel.app</div>
+            </div>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import html2canvas from 'html2canvas';
+import { QRCodeSVG } from 'qrcode.react';
 import { runV2Analysis } from '../../core/analysisService';
 import SpotifyIframe from '../../components/common/SpotifyIframe';
 import { supabase } from '../../lib/supabase';
@@ -384,7 +385,13 @@ export default function V2Result() {
             ))}
           </div>
         )}
-        <div style={{ textAlign: 'center', fontSize: '11px', color: '#b0c4d0' }}>mbti-music.vercel.app</div>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginTop: '4px' }}>
+          <QRCodeSVG value="https://mbti-music-1.vercel.app/" size={48} bgColor="transparent" fgColor="#b0c4d0" />
+          <div>
+            <div style={{ fontSize: '10px', color: '#b0c4d0', fontWeight: '700' }}>掃碼測你的音樂人格</div>
+            <div style={{ fontSize: '10px', color: '#b0c4d0', opacity: 0.7 }}>mbti-music-1.vercel.app</div>
+          </div>
+        </div>
       </div>
 
       {/* 底部三大按鈕 */}
