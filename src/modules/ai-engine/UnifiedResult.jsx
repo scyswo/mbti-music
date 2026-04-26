@@ -386,7 +386,7 @@ export default function V2Result() {
           </div>
         )}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginTop: '4px' }}>
-          <QRCodeSVG value="https://mbti-music-1.vercel.app/" size={48} bgColor="transparent" fgColor="#b0c4d0" />
+          <QRCodeSVG value="https://mbti-music-1.vercel.app/" size={52} bgColor="#ffffff" fgColor="#2d3748" style={{ borderRadius: 6, padding: 3 }} />
           <div>
             <div style={{ fontSize: '10px', color: '#b0c4d0', fontWeight: '700' }}>掃碼測你的音樂人格</div>
             <div style={{ fontSize: '10px', color: '#b0c4d0', opacity: 0.7 }}>mbti-music-1.vercel.app</div>
@@ -440,6 +440,7 @@ export default function V2Result() {
                     nickname: localStorage.getItem('nickname') || '匿名',
                     mbti_type: mbti,
                     content: msgText.trim(),
+                    created_at: new Date(Date.now() + 8 * 3600 * 1000).toISOString(),
                   }]);
                   setMsgStatus(error ? 'error' : 'sent');
                 }}

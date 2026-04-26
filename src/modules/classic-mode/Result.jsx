@@ -465,7 +465,7 @@ function Result() {
           )}
 
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
-            <QRCodeSVG value="https://mbti-music-1.vercel.app/" size={48} bgColor="transparent" fgColor="rgba(150,170,190,0.8)" />
+            <QRCodeSVG value="https://mbti-music-1.vercel.app/" size={52} bgColor="#ffffff" fgColor="#2d3748" style={{ borderRadius: 6, padding: 3 }} />
             <div>
               <div style={{ fontSize: '10px', color: 'rgba(150,170,190,0.9)', fontWeight: '700' }}>掃碼測你的音樂人格</div>
               <div style={{ fontSize: '10px', color: 'rgba(150,170,190,0.6)' }}>mbti-music-1.vercel.app</div>

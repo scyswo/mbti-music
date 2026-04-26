@@ -8,9 +8,10 @@ import { supabase } from '../lib/supabase';
 
 export async function userResultTool({ nickname, answers, mbtiResult }) {
   try {
+    const created_at = new Date(Date.now() + 8 * 3600 * 1000).toISOString();
     const { data, error } = await supabase
       .from('user_results')
-      .insert([{ nickname, answers, mbti_result: mbtiResult }])
+      .insert([{ nickname, answers, mbti_result: mbtiResult, created_at }])
       .select();
 
     if (error) throw error;
