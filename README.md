@@ -1,3 +1,4 @@
+
 # 🎧 MBTI 音樂人格測驗
 
 透過 10 道 AI 生成的情境式問題，分析你的音樂靈魂，對應 16 種 MBTI 人格類型，並從歌曲資料庫中精選 3 首最適合你的歌曲。
@@ -17,6 +18,8 @@
 - **API Key 輪替** — 支援最多 4 組 Gemini Key，配額耗盡自動切換下一組
 
 ---
+## Project Demo
+<img width="1659" height="675" alt="未命名設計2" src="https://github.com/user-attachments/assets/2bdccd21-c7d5-4211-ba28-660a9baacb90" />
 
 ## 技術架構
 
